@@ -1,0 +1,33 @@
+.imgsize{
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border: 1px solid #6d7704;
+}
+.imgsize img {
+    /* width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto; */
+    width: auto;
+    height: 100%;
+    display: inline;
+    margin: 0 auto;
+}
+.profileimg {
+    width: 18px;
+}
+.outerimgbox {
+    margin-bottom: 15px;
+}
+.sidebar-menu li img{
+    width: 18px;
+    margin-right: 15px;
+}

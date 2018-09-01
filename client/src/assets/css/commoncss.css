@@ -1,0 +1,144 @@
+﻿#waitingadd
+{
+   position: absolute;
+   left: 48%;
+   top: 40%;
+   z-index: 99;
+   display:none;
+}
+.innerdiv
+{
+  border-bottom:1px solid #ccc;	
+}
+#changepasswordform
+{
+	position:fixed;
+	display:none;
+	z-index:9999999999;
+	top:12%;
+	left:25%;
+	width:50%;
+	float:left;
+	background:#fff;
+	margin: 0;
+	padding: 0;
+	border:1px solid #ccc;
+	/*border-radius:10px;*/
+	box-shadow:0 0 10px 2px #aaa;
+}
+.commn_btn
+{
+    border: 1px solid transparent !important;
+    box-shadow: 0px 5px 8px 0px #747474 !important;
+    -webkit-box-shadow: 0px 5px 8px 0px #747474 !important;
+    -moz-box-shadow: 0px 5px 8px 0px #747474 !important;
+    -o-box-shadow: 0px 5px 8px 0px #747474 !important;
+    -ms-box-shadow: 0px 5px 8px 0px #747474 !important;
+}
+.commn_text
+{
+	border:2px solid #b49948 !important;
+	/*box-shadow:inset 0px 0px 3px 0px #b49948 !important;	*/
+	/*border-radius:4px !important;*/ 
+}
+.partpnt_poup
+{
+	padding: 8px;
+    border: 1px solid #b59848;
+    background: #b59848;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+   /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px;*/	
+	z-index:99999999;
+}
+.partag
+{
+    color: #FFFFFF;
+    font-size: 23px;
+    line-height: 40px;
+}
+.error1
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 15px;
+    COLOR: #FF0000;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana;
+}
+
+
+
+.text-5{color:#333;}
+
+ .tab-content .active {
+    min-height: 331px !important;
+    border: none;
+}
+.left-3 {
+	background:url("../images/browse.png") no-repeat scroll 0 0;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5%;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    height: 50px;
+    left: 0px;
+    position: absolute;
+    top:0px;
+ }
+.f {margin:35px;}
+
+.file-head {
+    width: 80%;
+    float: left;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+}
+.fileview {
+	box-shadow: 0 0 1px 1px #837f7e inset;
+    width: 100%;
+    float: left;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px #515252 solid;
+    overflow:hidden;
+    height: auto; margin-left:4%;
+}
+.file-head-2 {
+    width: 20%;
+    float: left;
+    text-align: center;
+    border-bottom: 1px #515252 solid;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+}
+.upload-height {
+    height: auto;
+    /*border-left: 1px #515252 solid;*/
+}
+.btn-primary1 {
+    background:url("../images/send-mail.png") no-repeat;
+    border-color: #89b345;
+    color: #fff; float:right; margin-top:5%;
+	padding:5px 55px;
+	border:none; border-radius:5px;
+}
+@media only screen and (max-width: 480px) {
+
+#particiapntform {
+	position:relative !important;
+	display:none;
+	z-index:9999999999 !important;
+	top: 40px !important;
+	left: 0px !important;
+	width: 100% !important;
+	float:left;
+}
+}

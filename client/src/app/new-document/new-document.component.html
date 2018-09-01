@@ -1,0 +1,96 @@
+<!-- <div class="wrapper"> -->
+    <!-- <app-header></app-header> -->
+    <!-- Left side column. contains the logo and sidebar -->
+    <!-- <app-main-side-bar></app-main-side-bar> -->
+    <!-- Content Wrapper. Contains page content -->
+    <!-- <div class="content-wrapper"> -->
+        <!-- Content Header (Page header) -->
+        <!-- <section class="content-header"> -->
+            <!--<h1>
+                Dashboard
+                <small>Control panel</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li class="active">Dashboard</li>
+            </ol>-->
+        <!-- </section> -->
+
+
+        <!-- Main content -->
+        <section class="content1">
+            <!-- /.row -->
+            <div class="outermost">
+                <div class="col-md-6 col-sm-6 col-xs-12 w_i">
+                   
+                      <div class="using_img"> <a style="text-decoration: none; color:#fff" (click)="opendocument('wi')" class="outeranchor">
+                        <h3>Easy Sign And Share<br> Using Image & Video System </h3> </a>
+                        <div class="bottomicon">
+                            <a  (click)='hideshow()'><span><i class="fa fa-info" aria-hidden="true"></i></span></a>
+                        </div>
+                      </div>
+                   
+                    <div *ngIf="hide"  class="outerboxinfo">
+                      <div class="triangle-up"></div>
+                      <div class="infoxbox">
+                        Create and share a highly secured document with your recipent(S) 
+                        and capture their image, video and their signing location imression in the recipt. 
+                        Be assured that you and your recipient(S) has image capuring capabilities 
+                        in their system while choosing this option.
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12 w_u">
+                   
+                      <div class="using_img">
+                            <a style="text-decoration: none; color:#fff" (click)="opendocument('ni')" class="outeranchor">
+                        <h3>Easy Sign And Share<br> Without Using Image & Video System </h3>  </a>
+                        <div class="bottomicon">
+                            <a (click)="hidealso()"><span><i class="fa fa-info" aria-hidden="true"></i></span></a>
+                        </div>
+                      </div>
+                  
+                    <div *ngIf="hideme" class="outerboxinfo">
+                      <div class="triangle-up"></div>
+                      <div class="infoxbox">
+                        Create and share a highly secured document with your recipent(S) 
+                        and capture their image, video and their signing location imression in the recipt. 
+                        Be assured that you and your recipient(S) has image capuring capabilities 
+                        in their system while choosing this option.
+                      </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-md-3"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="captureimg">
+                            <img src="../../assets/img/images.png"/>
+                            
+                            <div class="capimg tooltip12">
+                                <div>
+                                    <span class="tooltiptext">
+                                        Click on camera icon to capture your image
+                                        <br />
+                                        <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <img type="button" src="../../assets/img/camm11.png" class="regimg" />
+                                    
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-3"></div> -->
+
+            </div>
+        </section>
+
+    <!-- </div> -->
+      <!-- <app-footer></app-footer> -->
+    <!-- Control Sidebar -->
+    <!-- <app-control-slider></app-control-slider> -->
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+<!-- </div> -->

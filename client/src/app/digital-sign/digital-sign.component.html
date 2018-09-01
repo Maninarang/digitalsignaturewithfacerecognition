@@ -1,0 +1,905 @@
+<!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="assets/css/signature.css"> 
+<!-- <link rel="stylesheet" href="assets/css/mycustom.css">  -->
+
+ <!-- <file-drop  (onFileDrop)="filedropped($event)" (onFileOver)="addzindex();" class="filedroptext">
+                 
+</file-drop>  -->
+<section class="hdrsec">
+  <div class="logoimg">
+      <a routerLink='/landing'><img src="../../assets/img/ezee-logo.png"/></a>
+  </div>
+</section>
+
+<section class="fullpage">
+<div class="container" >
+                  
+  <div class="list-part myprofile mobilename" style="z-index:1" >
+
+            <li class="dropdown" dropdown >
+         
+   
+      
+  <i class="fa fa-user list5" aria-hidden="true"></i> &nbsp;
+         
+    <span class="title">{{fullname}} &nbsp;</span>
+    <a style="cursor: pointer;" class="dropdown-toggle" dropdownToggle>
+    <div class="downarrow mobiledownarrow"><b class="caret"></b></div></a>
+
+              <ul *dropdownMenu class="dropdown-menu mobilemenu">
+                
+    <li><a (click)="logout();">Logout</a></li>
+               
+     <li><a routerLink="/profile">View Profile</a></li>
+              
+     <li id=""><a href="#">Change Password</a></li>
+           
+     <li><a href="#">Membership Order</a></li>
+  
+              </ul>
+
+           </li>
+     
+</div>
+
+  </div>
+
+
+
+
+  <div class="container">
+    <!-- <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px',fullScreenBackdrop: true }"></ngx-loading> -->
+    <ng4-loading-spinner [loadingText]="'Please wait...'" [zIndex]="9999"> </ng4-loading-spinner>
+
+    <div class="">
+    
+      <div class="col-lg-2 col-md-2 col-xs-12 mobilepd">
+         
+         <!--Instructions & logo part start-->		
+             
+         <div style="display:block; margin:0 auto;z-index: 999" class="col-lg-12 mobilepd"> 
+             
+           <a routerLink="/"  data-placement="right" data-toggle="tooltip" data-original-title="" class="homeanchor">
+              <span class="pt51 pt567 mobilehomebtn">
+               <span class="fa fa-home"></span> Home
+              </span>
+            </a>
+            
+          </div>	
+               
+           <a href="">
+               
+             <img class="img-responsive img-portfolio2 digitalimg mobiledigital" src="../../assets/img/signature.png"  alt="" data-placement="right"> 
+               
+           </a>
+
+    
+     
+     <div class="wrapper2">
+    
+    <li style="list-style:none; cursor:pointer;" class="toggle">
+       
+       <a style="cursor: pointer;" class="list-part2 mobilehomebtn" (click)="showinstructions = !showinstructions" data-placement="right">
+    
+        <span class="title2">INSTRUCTIONS</span>
+       
+       </a>
+        
+      <ul *ngIf="showinstructions" class="drop-popup mydroppopup" >
+         
+         <div class="arrow-top"><img src="../../assets/img/arrow-top.png"></div>
+          
+         <div class="inst-popup instnew" style="font-family: Century Gothic; font-size: 14px; text-align: left; font-weight: bold; color: #333;">
+         
+         <ul style="list-style: none; padding: 0;">
+         
+             <li style="margin-bottom: 10px;">Step 1:  Upload or drag and drop PDF file.</li>
+         
+             <li style="margin-bottom: 10px;">Step 2:  Check box, if you require an expiration date (not mandatory).</li>
+             
+           <li style="margin-bottom: 10px;">Step 3:  Add participants.</li>
+             
+           <li style="margin-bottom: 10px;">Step 4:  You can rearrange signing order under "priority". Click on arrow up or down to change signing order (not mandatory). Click next to complete.</li>
+      
+      
+         </ul>
+    
+        </div>
+      
+      </ul>
+      
+      </li>
+    
+    </div>
+  
+  
+      <div class="clearfix mymsg"></div>	    <!--Instructions & logo part end-->
+      
+    </div>
+    
+    <div class="col-lg-10 col-md-10 col-xs-12">
+       
+         <div class="inner-part8" style="box-shadow:none !important;background: #5e6e03 !important;">
+        
+             <div class="col-lg-12">
+                  
+          <div class="col-lg-12">
+                   
+           <p class="pt10 encryption">e-signature</p>
+                  </div>
+   </div>           
+         
+      <div class="col-lg-12">
+           
+       <div class="tabs-left">
+  
+
+   
+   <!-- <ul class="nav nav-tabs6">
+     
+     <li class="active"><a href=""><span class="fa fa-file-pdf-o"></span>&nbsp;&nbsp;<span class="pt6">Compose</span></a></li>
+     
+     <li><a href=""><span class="fa fa-ban"></span>&nbsp;&nbsp;<span class="pt6">Action Required</span></a></li>
+   
+    <li class=""><a href=""><span class="fa fa-check"></span>&nbsp;&nbsp;<span class="pt6">Completed</span></a></li>
+   
+    <li class=""><a href=""><span class="fa fa-users"></span>&nbsp;&nbsp;<span class="pt6">Contact</span></a></li>
+   
+   </ul>  -->
+   <ul class="nav nav-tabs6">
+     
+      <li class="active" style="z-index:1"><a routerLink="/digital_sign/{{digitalpath}}"><span class="iconimg"><img src="assets/img/pdficon.png"/></span>&nbsp;&nbsp;<span class="pt6">Compose</span></a></li>
+      
+      <li class="" style="z-index:1"><a routerLink="/actionrequired"><span class="iconimg"><img src="assets/img/x.png"/></span>&nbsp;&nbsp;<span class="pt6">Action Required</span></a></li>
+    
+     <li class="" style="z-index:1"><a routerLink="/completed"><span class="iconimg"><img src="assets/img/right.png"/></span>&nbsp;&nbsp;<span class="pt6">Completed</span></a></li>
+    
+     <li class="" style="z-index:1"><a routerLink=""><span class="iconimg"><img src="assets/img/usersicon.png"/></span>&nbsp;&nbsp;<span class="pt6">Contact</span></a></li>
+    
+    </ul>             
+       
+   <div id="myTabContent" class="tab-content mobilecontent" style="opacity: 1;">			
+           
+    <div class="tab-pane active" id="home"><div class="col-lg-12 col-md-12 col-xs-12">
+            
+      <div class="">
+     
+     
+     <div class="col-lg-5">
+     
+     <div class="box-part" style=" border-radius:0px;">
+                 
+       <div id="" style="display:none;"><img src="" style="" class="load-icon">
+       
+       <div id="" style="display:none;">
+       
+       <div class="loading-progress"></div>
+       
+       </div>
+                 
+       <br>
+       
+ 
+                    
+          <!-- <div id='targetLayer'></div>-->
+       
+     </div>
+                 
+
+                   
+         <input  #file type="file" (change)="fileChange($event)" class="fileUpload" style="display: none" >
+       
+          <button id="uploaddocbtn" style="z-index: 1;position:relative" type="button" (click)="file.click()" data-placement="bottom" data-toggle="tooltip" data-original-title="Browse or drag and drop pdf file here"></button>
+         <span class="content" style="color: #0782d0; font-size:20px;display: -webkit-box;
+         display: -ms-flexbox;display: flex; -webkit-box-pack: center; -ms-flex-pack: center;justify-content: center;
+         -webkit-box-align: center; -ms-flex-align: center;align-items: center;"> Drag file here or click the icon to upload PDF file </span>
+           
+         <br>
+     
+          <span>{{pdferror}}</span>    
+      </div>
+      <button id="showpdf" style="display:none"  (click)="showpdf()">Hello</button>
+
+       
+     </div> 
+    <div class="col-lg-7"> 
+      <div class="outercross">
+        <div id="" *ngIf='pdfpath' class="selectdigital" style="display: block;">
+          <span id="" (click)='clear()' class="pdfclose"><img src="assets/img/cross2.png" style="z-index:1;position: relative"></span>{{pdfpath.pdfid}}.pdf<br>
+        </div>
+      </div>  
+      <div class="um-jam2 smalldivpdf" *ngIf="innerHtml" [innerHTML]="innerHtml">
+
+      <span >    
+          <label class="labell">Uploaded Documents</label> 
+      </span>
+ 
+      </div>
+    </div>
+
+
+ <modal #participantModal [hideCloseButton]="true" [closeOnOutsideClick]="false">
+  
+        <modal-content class="custom-mod-cont"> 
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nullvoid">
+                <div class="row nullvoid" style="border-radius:0px; box-shadow:none !important;">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                    <div class="partpnt_poup"> 
+                      <h3 class="partagselect"> Participant</h3>
+                      <input type="button" class="btn btn-danger closepar commn_btn cnclbtn d_c" id="" value="Cancel" (click)="participantModal.close()">
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nullvoid" id="selectpati1">
+                    <!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 selectpati" (click)="addparticipantModal.open();participantModal.close();">
+                      <span  class="particiapntll" style="display:block;padding: 41px 0px; font-family:'Century Gothic';"> Add New Participants</span></div> -->
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 selectpati" (click)="addnewparticipantmodal()">
+                      <span  class="particiapntll partbg" style="display:block;padding: 41px 0px; font-family:'Century Gothic';"> Add New <br> Participants</span></div>
+                   
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 selectpati" (click)="mycontactsModal.open();participantModal.close();">
+                      <span  class="partbg" style="display:block;padding: 41px 0px; font-family:'Century Gothic';"> Add From <br> Contact</span></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 selectpati" (click)="openaddyourself();participantModal.close();">
+                      <span class="particiapntll partbg" style="display:block;padding: 41px 0px; font-family:'Century Gothic';"> Add <br>Yourself</span></div>
+                  </div>
+                </div>
+              </div>   
+                 </modal-content>
+       
+    </modal>
+
+
+ <modal #addparticipantModal [hideCloseButton]="true" [closeOnOutsideClick]="false">
+    <modal-content>
+      <form method="post" novalidate="" [formGroup]="addparticipantForm" (ngSubmit)="addnewparticipant($event)">
+    <div class=""  >
+          <div class="col-lg-12 nullvoid">
+            <div class="row nullvoid">
+                <div class="col-lg-12">
+                    <div class="partpnt_poup">
+                      <button type="button" class="btn btn-danger closepar commn_btn cnclbtn d_c" (click)="addparticipantModal.close();">Cancel</button>
+                      <h3 class="partag myparttag">Add New Participant</h3>
+                      <button type="submit" class="btn btn-success addbtnnew d_c" id="parbutton">Add</button>
+                    </div>
+                </div>
+                <div class="main-box infographic-box" style="box-shadow:none !important; border-radius:0px;">
+                  <div class="navbar-collapse nullvoid" style="box-shadow:none !important; border-radius:0px;">
+                    <div class="col-md-12" style="padding:20px 0">
+                      <div class="col-sm-12">
+                        <div class="col-md-2"> <span style="font-size:21px;"><span class="error">*</span>Type:</span> </div>
+                        <div class="col-md-5 myradiodiv"> &nbsp;&nbsp;&nbsp;
+                          <label> <input type="radio"  value="Remote Signer" tabindex="0" formControlName="newtype" [(ngModel)]="newtype" [checked]="newtype==='Remote Signer'" > 
+                           <span class="checkmark_b"></span>Remote Signer</label>
+                          
+                         <!-- <input type="radio" value="Remote Signer" id="test1" name="radio-group" checked>
+                         <label for="test1">Apple</label> -->
+                        
+                        </div>
+                        <div class="col-md-5 myradiodiv"> &nbsp;&nbsp;&nbsp; 
+                         <label><input type="radio"  value="Reviewer" tabindex="0" formControlName="newtype" [(ngModel)]="newtype" [checked]="newtype==='Reviewer'"> 
+                        <span class="checkmark_b"></span>Reviewer</label>
+                        </div>
+                  
+                      <br>
+                      <br> 
+                      <br>
+                      <div class="col-md-6 pdd0 frmgrp">              
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <span class="fontlabel">First Name</span>
+                            <input type="text" formControlName="firstName" class="form-control commn_text" tabindex="1">
+                          
+                            <span style="color:red" *ngIf="firstnameerror"> {{firstnameerror}}</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <span class="fontlabel">Email ID</span> 
+                              <input type="text" formControlName="email" class="form-control commn_text"  tabindex="3">
+                              <span style="color:red" *ngIf="emailerror"> {{emailerror}}</span>
+                           </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 pdd0 frmgrp">
+                        <div class="col-sm-12"> 
+                            <div class="form-group">
+                              <span class="fontlabel">Last Name</span>
+                              <input type="text" formControlName="lastName" class="form-control commn_text" tabindex="2">
+                              <span style="color:red" *ngIf="lasterror"> {{lasterror}}</span>
+                           </div>
+                      </div>
+                        <div class="col-sm-12"> 
+                            <div class="form-group">
+                              <span class="fontlabel">Subject</span>
+                              <input type="text" formControlName="subject" class="form-control commn_text"  tabindex="5">
+                              </div>
+                        </div>
+                      </div>              
+                      <div class="col-md-12"> 
+                        <div class="form-group">
+                          <span class="fontlabel">
+                            <span class="fontlabel"></span>Address </span>
+                          
+                          <input type="text" formControlName="address" class="form-control commn_text"  tabindex="4">
+                        </div>
+                      </div>  
+                      <div class="col-sm-12" *ngIf="newtype=='Remote Signer'">
+                          <div class="form-group">
+                            <span class="fontlabel"><span class="fontlabel"></span>Message</span>
+                            <textarea formControlName="message" placeholder="Send a note with your contract" class="form-control commn_text"  tabindex="6"></textarea>
+                            <span *ngIf="error">{{error}}</span>
+                          </div>
+                     </div>
+                      
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+         </div>
+         </div>
+        </form>
+    </modal-content>
+       
+</modal>
+
+<modal #mycontactsModal [hideCloseButton]="true" [closeOnOutsideClick]="false">
+<modal-content>
+    <div class=""> 
+        <div id="fade" class="popup2"></div>
+        
+         <div class="col-lg-12 nullvoid">
+          <div class="innerboxdiv">
+           <div class="row nullvoid">
+             <div class="col-lg-12"> 
+                <div class="partpnt_poup"> 
+                <h3 id="partagcontact"> Add From Contact</h3>
+                <button type="button" (click)="mycontactsModal.close();" class="btn btn-danger closepar commn_btn cnclbtn">Cancel</button>
+                <button type="button" (click)="mycontactsModal.close();addparticipantModal.open()" class="btn btn-success addbtnnew d_c" id="parbutton">Add New</button>
+
+               </div>
+            </div>
+           </div>
+           <div>
+            <div class="col-lg-12" (click)="contactdetail(contact._id);" *ngFor = "let contact of mycontacts"> 
+                <div class="contact"> 
+                  <span>{{contact.firstName}}  {{contact.lastName}} </span><br/> 
+                    <span>({{contact.email}})</span> 
+                </div>
+            </div>
+
+           <div class="col-lg-12" *ngIf="nocontacts" > 
+              <span>Please Add Contacts To your List</span><br/> 
+            </div>
+               </div>
+          </div>
+        </div>
+         <!--</div>-->
+       </div>
+
+</modal-content>
+</modal>
+
+
+<modal #addyourselfModal [hideCloseButton]="true" [closeOnOutsideClick]="false">
+  <modal-content>
+    <form method="post" novalidate=""  #ay="ngForm"    (ngSubmit)="addyourself(ay.value,$event)">
+  <div class=""  >
+        <div class="col-lg-12 nullvoid">
+          <div class="row nullvoid">
+              <div class="col-lg-12 partpnt_poup">
+                <button type="button" class="btn btn-danger closepar commn_btn cnclbtn d_c"  (click)="removeerror();addyourselfModal.close();">Cancel</button>
+                <span class="partag myparttag">Add Yourself</span>
+                <button type="submit" [disabled]="isdisabled"  class="btn btn-success addbtnnew d_c">Add</button>
+              </div>
+              <div class="main-box infographic-box" style="box-shadow:none !important; border-radius:0px;">
+                <div class="navbar-collapse nullvoid" style="box-shadow:none !important; border-radius:0px;">
+                  <div class="col-md-12" style="padding:20px 0">
+                    <div class="col-sm-12">
+                      <div class="col-md-2"> <span style="font-size:21px;"><span class="error">*</span>Type:</span> </div>
+                      <div class="col-md-5 myradiodiv"> &nbsp;&nbsp;&nbsp;
+                        <label><input type="radio"  value="Remote Signer" tabindex="0" name="type" [(ngModel)]="type" required checked > 
+                          <span class="checkmark_b"></span> Remote Signer</label>
+                        
+                       <!-- <input type="radio" value="Remote Signer" id="test1" name="radio-group" checked>
+                       <label for="test1">Apple</label> -->
+                      
+                      </div>
+                      <div class="col-md-5 myradiodiv"> &nbsp;&nbsp;&nbsp; 
+                        <label><input type="radio" value="Reviewer"   [(ngModel)]="type" tabindex="0" name="type" required > 
+                          <span class="checkmark_b"></span>Reviewer</label>
+                      </div>
+                     
+                
+                    <br>
+                    <br>
+                    <br>
+                    <div class="col-md-6 pdd0 frmgrp">              
+                      <div class="col-sm-12">
+                          <div class="form-group">
+                            <span class="fontlabel">First Name</span>
+                            <input type="text" name="firstName" [(ngModel)]="firstName"  class="form-control commn_text" tabindex="1">
+                            <span style="color:red" *ngIf="firstnameerror"> {{firstnameerror}}</span>
+                          </div>
+                      </div>
+                      <div class="col-sm-12">
+                          <div class="form-group">
+                            <span class="fontlabel">Email ID</span> 
+                            <input type="text" name="email" [(ngModel)]="email"  class="form-control commn_text"  tabindex="3">
+                            <span style="color:red" *ngIf="error">{{error}}</span>
+                            <span style="color:red" *ngIf="emailerror"> {{emailerror}}</span>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 pdd0 frmgrp">
+                      <div class="col-sm-12"> 
+                          <div class="form-group">
+                            <span class="fontlabel">Last Name</span>
+                            <input type="text" name="lastName" [(ngModel)]="lastName" class="form-control commn_text" tabindex="2">
+                            <span style="color:red" *ngIf="lasterror"> {{lasterror}}</span>
+                         </div>
+                      </div>
+                      <div class="col-sm-12">
+                          <div class="form-group">
+                            <span class="fontlabel">Address</span>
+                            <input type="text" name="address" [(ngModel)]="address" class="form-control commn_text"  tabindex="4">
+                          </div>
+                      </div>
+                    </div>              
+                    <div class="col-md-12"> 
+                      <span class="fontlabel"><span class="fontlabel"></span>Subject</span>
+                      <input type="text" name="subject" [(ngModel)]="subject" class="form-control commn_text"  tabindex="5">
+                    </div>
+                    <div class="col-md-12" *ngIf="type=='Remote Signer'"> 
+                      <span class="fontlabel"><span class="fontlabel"></span>Message</span>
+                        <textarea name="message" [(ngModel)]="message" placeholder="Send a note with your contract" class="form-control commn_text"  tabindex="6"></textarea>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+       </div>
+       </div>
+      </form>
+  </modal-content>
+     
+</modal>
+         
+
+<modal #contactdetailModal [hideCloseButton]="true" [closeOnOutsideClick]="false">
+  <modal-content>
+    <form method="post" novalidate="" #cf="ngForm"  (ngSubmit)="addfromcontact(cf.value)">
+  <div class=""  >
+        <div class="col-lg-12 nullvoid">
+          <div class="row nullvoid">
+              <div class="col-lg-12 partpnt_poup">
+                <button type="button" class="btn btn-danger closepar commn_btn cnclbtn d_c" (click)="contactdetailModal.close();">Cancel</button>
+                <span class="partag myparttag">Add New Participant </span>
+                <button type="submit"  class="btn btn-success addbtnnew d_c">Add</button>   
+              </div>
+              <div class="main-box infographic-box" style="box-shadow:none !important; border-radius:0px;">
+                <div class="navbar-collapse nullvoid" style="box-shadow:none !important; border-radius:0px;">
+                  <div class="col-md-12" style="padding:20px 0">
+                    <div class="col-sm-12">
+                      <div class="col-md-2"> <span style="font-size:21px;"><span class="error">*</span>Type:</span> </div>
+                      <div class="col-md-5 myradiodiv"> &nbsp;&nbsp;&nbsp;
+                        <label><input type="radio"  value="Remote Signer" tabindex="0" name="type" [(ngModel)]="type" [checked]="type==='Remote Signer'"> 
+                          <span class="checkmark_b"></span>Remote Signer</label>
+                        
+                       <!-- <input type="radio" value="Remote Signer" id="test1" name="radio-group" checked>
+                       <label for="test1">Apple</label> -->
+                      
+                      </div>
+                      <div class="col-md-5 myradiodiv"> &nbsp;&nbsp;&nbsp; 
+                        <label><input type="radio"  value="Reviewer" [(ngModel)]="type" tabindex="0" name="type" [checked]="type==='Reviewer'"> 
+                          <span class="checkmark_b"></span>Reviewer</label>
+                      </div>
+                
+                    <br>
+                    <br>
+                    <br>
+                    <div class="col-md-6 pdd0 frmgrp">  
+                        
+                          <div class="col-sm-12" style="display:none;"><span class="fontlabel"></span>
+                            <div class="form-group">
+                            <input type="text" name="contactid" [(ngModel)]="contactid" class="form-control commn_text" tabindex="0">
+                          </div>
+                        </div>            
+                      <div class="col-sm-12">
+                          <div class="form-group">
+                            <span class="fontlabel">First Name</span>
+                            <input type="text" name="firstName" [(ngModel)]="contactfirstName" class="form-control commn_text" tabindex="1">
+                            <span style="color:red" *ngIf="firstnameerror"> {{firstnameerror}}</span>
+                          </div>
+                      </div>
+                      <div class="col-sm-12">
+                          <div class="form-group">
+                            <span class="fontlabel">Email ID</span> 
+                            <input type="text" name="email" [(ngModel)]="contactemail" class="form-control commn_text"  tabindex="3">
+                            <span style="color:red" *ngIf="error">{{error}}</span>
+                            <span style="color:red" *ngIf="emailerror"> {{emailerror}}</span>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 pdd0 frmgrp">
+                      <div class="col-sm-12"> 
+                          <div class="form-group">
+                            <span class="fontlabel">Last Name</span>
+                            <input type="text" name="lastName" [(ngModel)]="contactlastName" class="form-control commn_text" tabindex="2">
+                            <span style="color:red" *ngIf="lasterror"> {{lasterror}}</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-12"> 
+                          <div class="form-group">
+                            <span class="fontlabel">Address</span>
+                            <input type="text" name="address" [(ngModel)]="address" class="form-control commn_text"  tabindex="4">
+                          </div>
+                      </div>
+                    </div>              
+                    <div class="col-md-12"> 
+                        <div class="form-group">
+                          <span class="fontlabel"><span class="fontlabel"></span>Subject</span>
+                          <input type="text" name="subject" [(ngModel)]="address" class="form-control commn_text"  tabindex="5">
+                          </div> 
+                        </div> 
+                    <div class="col-md-12" *ngIf="type=='Remote Signer'"> 
+                      <div class="form-group">
+                        <span class="fontlabel"><span class="fontlabel"></span>Message</span>
+                        <textarea name="message"  [(ngModel)]="message" placeholder="Send a note with your contract" class="form-control commn_text"  tabindex="6"></textarea>
+                      </div>
+                  </div>
+                   
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+       </div>
+       </div>
+      </form>
+  </modal-content>
+     
+</modal>
+         
+<modal #editparticipantModal [hideCloseButton]="true" [closeOnOutsideClick]="false">
+    <modal-content>
+      <form method="post" novalidate=""  #ep="ngForm"   (ngSubmit)="editparticipant()">
+    <div class=""  >
+          <div class="col-lg-12 nullvoid">
+            <div class="row nullvoid">
+                <div class="col-lg-12 partpnt_poup">
+                  <button type="button" class="btn btn-danger closepar commn_btn cnclbtn" (click)="removeerror();editparticipantModal.close();">Cancel</button>
+                  <span class="partag myparttag">Edit Contact</span>
+                  <button type="submit"  class="btn btn-success addbtnnew">Save</button>
+                </div>
+                <div class="main-box infographic-box" style="box-shadow:none !important; border-radius:0px;">
+                  <div class="navbar-collapse nullvoid" style="box-shadow:none !important; border-radius:0px;">
+                    <div class="col-md-12" style="padding:20px 0">
+                      <div class="col-sm-12">
+                        <div class="col-md-2"> <span style="font-size:21px;"><span class="error">*</span>Type:</span> </div>
+                        <div class="col-md-5 myradiodiv"> &nbsp;&nbsp;&nbsp;
+                          <label><input type="radio"  value="Remote Signer" tabindex="0" name="type" [(ngModel)]="editcontacttype" required checked > 
+                            <span class="checkmark_b"></span>Remote Signer</label>
+                          
+                         <!-- <input type="radio" value="Remote Signer" id="test1" name="radio-group" checked>
+                         <label for="test1">Apple</label> -->
+                        
+                        </div>
+                        <div class="col-md-5 myradiodiv"> &nbsp;&nbsp;&nbsp; 
+                          <label><input type="radio" value="Reviewer"  [(ngModel)]="editcontacttype" tabindex="0" name="type" required > 
+                            <span class="checkmark_b"></span>Reviewer</label>
+                        </div>
+                       
+                  
+                      <br>
+                      <br>
+                      <br>
+                      <div class="col-md-6 pdd0 frmgrp">              
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <span class="fontlabel">First Name</span>
+                              <input type="text" name="firstName" [(ngModel)]="contactfirstName"  class="form-control commn_text" tabindex="1">
+                              <span style="color:red" *ngIf="firstnameerror"> {{firstnameerror}}</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <span class="fontlabel">Email ID</span> 
+                              <input type="text" name="email" [(ngModel)]="contactemail"  class="form-control commn_text"  tabindex="3">
+                              <span style="color:red" *ngIf="error">{{error}}</span>
+                              <span style="color:red" *ngIf="emailerror"> {{emailerror}}</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 pdd0 frmgrp">
+                        <div class="col-sm-12"> 
+                            <div class="form-group">
+                              <span class="fontlabel">Last Name</span>
+                              <input type="text" name="lastName" [(ngModel)]="contactlastName" class="form-control commn_text" tabindex="2">
+                              <span style="color:red" *ngIf="lasterror"> {{lasterror}}</span>
+                           </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <span class="fontlabel">Address</span>
+                              <input type="text" name="address" [(ngModel)]="contactaddress" class="form-control commn_text"  tabindex="4">
+                            </div>
+                        </div>
+                      </div>              
+                      <div class="col-md-12"> 
+                        <span class="fontlabel"><span class="fontlabel"></span>Subject</span>
+                        <input type="text" name="subject" [(ngModel)]="contactsubject" class="form-control commn_text"  tabindex="5">
+                      </div>
+                      <div class="col-md-12"> 
+                        <span class="fontlabel"><span class="fontlabel"></span>Message</span>
+                          <textarea name="message" [(ngModel)]="contactmessage" placeholder="Send a note with your contract" class="form-control commn_text"  tabindex="6"></textarea>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+         </div>
+         </div>
+        </form>
+    </modal-content>
+       
+  </modal>
+  
+    
+    </div>			  
+        
+    </div>
+         
+   <!-- /tab-content -->
+
+
+   <div class="col-lg-12">
+               
+      <div class="form-group um-jap col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                
+      <label for="inputEmail" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 control-label2">Reference No.</label>
+                
+      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                  
+        <input type="text" name="refnumber" class="form-control pannel-1" placeholder="Ref.0000022" style="color:#000" value="{{documentcount}}" readonly="">
+                
+      </div>
+              
+      </div>				  
+              
+      <div class="form-group groups_group1 col-md-6 col-lg-6 col-sm-12 col-xs-12 mrginbtm">  
+       
+      <span id="expirationdate" style="margin-top:0px;">
+
+          <div class="checkbox" style="z-index:1">
+              <!-- <label>
+                  <input type="checkbox"> Remember me
+              </label> -->
+              <label class="container56"> Expiration Date
+                  <input type="checkbox" (change)="defauldate($event)" name="chk" [(ngModel)]="showexpdate">
+                  <span class="checkmark"></span>
+                </label>
+          </div>
+               
+       <!--<label for="inputEmail" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 control-label2" style="float: left;">Expiration Date</label>-->
+       
+        <!--<div class="col-lg-6" style="margin-top:0px;">
+           <input type="checkbox" (change)="defauldate($event)" name="chk" [(ngModel)]="showexpdate"> 
+        </div> -->            
+        
+      </span>
+            
+    </div>	
+
+    <div class="form-group groups_group1 col-md-6 col-lg-6 col-sm-12 col-xs-12 mrginbtm">  
+       
+        <span style="margin-top:0px;">
+                 
+         <!-- <label for="inputEmail" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 control-label2" style="float: left;">Priority</label>
+                  
+        <div class="col-lg-9" style="margin-top:0px;">
+             <input type="checkbox" (change)="defauldate($event)" name="chk" style="margin-top: 10px;height:20px;width: 20px; border: 3px #b49948 solid;"> </div>              -->
+          <div class="checkbox" style="z-index:1">
+              <!-- <label>
+                  <input type="checkbox"> Remember me
+              </label> -->
+              <label class="container56"> Priority
+                  <input type="checkbox"  (change)="priorityreq($event)">
+                  <span class="checkmark"></span>
+                </label>
+          </div>
+     
+        
+        </span>
+              
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:10px;">				  
+        <div *ngIf="showexpdate" class="calinnerdiv">
+         <input class="form-control pannel calinput" #date placeholder="Select a date" ngx-mydatepicker name="mydate"
+                [(ngModel)]="model" [options]="myOptions" #dp="ngx-mydatepicker" (dateChanged)="onDateChanged($event)"/>
+ 
+        
+            
+             <button type="button" class="calbtn" (click)="dp.toggleCalendar()">
+                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+             </button>
+         </div>
+    </div>
+
+
+    <!-- <div class="form-group groups_group1" style="margin-left:-3%;">
+      
+       <span id="" style="margin-top:0px;">
+                
+        <label for="inputEmail" class="col-lg-3 control-label2" style="float: left;">Add Priority</label>
+                 
+       <div class="col-lg-1" style="margin-top:0px;">
+            <input type="checkbox" name="" style="margin-top: 10px;height:20px;width: 20px; border: 3px #b49948 solid;"> </div>             
+                  
+        <div class="col-lg-8" style="margin-top:10px;">				  
+                     
+           
+      <div>
+            <input class="form-control pannel calinput" placeholder="Select a date" ngx-mydatepicker name="mydate"/>
+    
+           
+               
+                <button type="button" class="calbtn">
+                    <i class="glyphicon glyphicon-calendar"></i>
+                </button>
+            </div>
+        
+
+
+       </div>
+       
+       </span>
+             
+     </div>	 -->
+     
+
+       
+
+
+    <div class="col-md-12 col-md-12 col-sm-12 col-xs-12 Umang mobilebg" id="added"> 
+                    
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 mobilepd mobbgginner">
+                    
+     
+
+
+       <div class="tablediv" style="z-index:1">
+           <table class="table table-hover">
+               <thead>
+                 <tr>
+                   <th>Name</th>
+                   <th *ngIf="priority">Priority</th>
+                   <th>Type</th>
+                   <th>Action</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr *ngFor="let contact of contacts ; let i = index;let l =last;">
+                     <td>{{contact.name}}</td>
+                     <td *ngIf="priority">{{i+1}}<button *ngIf="(i==0 || !l) && contacts?.length != 1" (click)="changepriority(i,i+1)" type="button"><i class="fa fa-arrow-down">Down</i></button><button *ngIf="i !=0" (click)="changepriority(i,i-1)" type="button"><i class="fa fa-arrow-up">Up</i></button></td>
+                     <td *ngIf="contact.type">{{contact.type}}</td>
+                     <td *ngIf="!contact.type">Remote Signer</td>
+                     
+                     <td>
+
+                        <span class="fa fa-pencil sign_icon" aria-hidden="true" style="font-size: 24px; padding-right: 10px;    cursor: pointer;z-index:1;position: relative;" title="Click this to edit the participant" data-toggle="tooltip" data-palcement="bottom" (click)="editcontacts(contact.id);"></span>                       <span class="fa fa-trash-o sign_icon" aria-hidden="true" style=" display:inline !important; font-size: 24px;     cursor: pointer;z-index:1;position: relative" title="Click this to delete the participant from list" data-toggle="tooltip" (click)="deletecontact(contact.email);"  data-palcement="bottom"></span>
+                     </td>
+                 </tr>
+               </tbody>
+             </table>
+       </div>
+
+
+
+
+        </div>
+<div class="col-md-6 col-sm-6 col-xs-12 mobilepd" style="z-index:1">
+   <a *ngIf="pdfpath"><button   class="bottom-nextbtn addpart" (click)="addpatipant()">Add Participants</button></a>
+   <a *ngIf="!pdfpath"><button disabled   class="bottom-nextbtn addpart" (click)="addpatipant()">Add Participants</button></a>
+   
+</div>
+
+<div class="col-md-6 col-sm-6 col-xs-12 mobilepd" style="z-index:1"> 
+   <a  *ngIf="contactList" (click)="adduserstodocument();"><button class="bottom-nextbtn tofloat">Next</button></a>
+</div>
+       
+                  
+                  </div> 
+            
+            <!--</table>disableddisabled -->				
+            
+  
+            
+    <div class="clearfix mobclr"></div>
+    
+    <div class="particiapnt34 mobpart">Note: Please upload PDF before adding participants</div>
+          
+    </div>
+       
+   </div></div>
+   <file-drop  (onFileDrop)="filedropped($event)" (onFileOver)="addzindex();" style="background-color: red" class="filedroptext">
+  </file-drop>
+      <div class="clearfix"></div>
+       
+     </div>
+     
+     </div>
+   
+   </div>
+  
+   </div>
+
+
+<div class="shade">
+  
+  <div class="popmsg">
+   
+   <p style="color:#FFFFFF; text-align:center;font-weight:900;font-size:16px;padding:10px 0; margin:0;" id="ses"></p>
+ 
+ </div>
+
+ </div> 
+</div>
+</div>   
+</section>
+
+
+<footer id="footer">
+  <div class="container">
+      <div class="col-md-2 col-sm-2 col-xs-12">
+          <div class="msgimgdiv">
+              <img src="../../assets/img/chat.png" />
+          </div>
+      </div>
+      <div class="col-md-5 col-sm-5 col-xs-12">
+          <div class="copyrighttext">
+              <p>COPYRIGHT &copy; 2018.ALL RIGHTS RESERVED</p>
+          </div>
+      </div>
+      <div class="col-md-5 col-sm-5 col-xs-12">
+          <div class="social-icondiv">
+              <ul>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/insta.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/fb.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/twitter.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/google-plus.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/you.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/test.png" />
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+

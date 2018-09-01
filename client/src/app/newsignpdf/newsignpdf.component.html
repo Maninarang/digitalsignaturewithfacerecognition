@@ -1,0 +1,289 @@
+<section *ngIf="!showpdf" class="hdrsec">
+    <div class="logoimg">
+        <a routerLink='/landing'><img src="../../assets/img/ezee-logo.png"/></a>
+    </div>
+</section>
+
+
+
+<!-- 1st view start -->
+<section *ngIf="!showpdf" class="pdfsection">
+
+    <div class="col-md-3"></div>
+    <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="cameradiv">
+
+            <div class="form-group nwlbl formdiv">
+                <!-- <label>Capture Image</label> -->
+                <input type="hidden" class="form-control" (change)="onImageChangeFromFile($event)" [(ngModel)]="credentials.imag" [value]="credentials.imag ? credentials.imag : null"
+                    name="webcamImage" id="webcamImage" required>
+                <!-- <div class="capimg">
+              <img [src]="webcamImage.imageAsDataUrl" name="image" [(ngModel)]="credentials.image" ngDefaultControl>
+          </div> -->
+
+                <div class="fropicture" *ngIf="!showWebcam && !webcamImage">
+                    <div class="capimg tooltip12">
+                        <span class="tooltiptext">Click on camera icon to capture your image
+                            <br />
+                            <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+                        </span>
+                        <img src="../../assets/img/images.png" style="width: 100%;" />
+                    </div>
+                    <!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> -->
+                    <img type="button" (click)="toggleWebcam();" src="../../assets/img/camm11.png" class="regimg" />
+                </div>
+                <div style="height: 100%; width: 100%">
+                    <webcam [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam"></webcam>
+                    <div class="capimg" *ngIf="webcamImage">
+                        <img [src]="webcamImage.imageAsDataUrl" name="image" [(ngModel)]="credentials.image" ngDefaultControl>
+                    </div>
+                  
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 signdiv">
+                    <div class="form-group">
+                        <!-- <button *ngIf="!Camera " type="button" (click)="toggleWebcam();" class="btn signbtn fullwdth nwclr">
+                          <i class="fa fa-camera" aria-hidden="true"></i> Open Camera</button> -->
+                        <button type="button" *ngIf="camera" (click)="triggerSnapshot();" class="btn signbtn fullwdth">Capture</button>
+                        <button *ngIf="imagecaptured" (click)="toggleWebcam();" type="button" class="btn signbtn fullwdth c_a">Capture Again</button>
+                        <button *ngIf="imagecaptured" (click)="verifyuser();" type="button" class="btn signbtn fullwdth v_b">Verify</button>
+
+                    </div>
+                    <!-- <button (click)="verifyuser();" type="button" class="btn signbtn fullwdth">Verify</button> -->
+                </div>
+
+
+                <div class="error-msg-div">
+                    <span calss="error-msg">{{error}}</span>
+                </div>
+
+
+            </div>
+
+
+            <div class="form-group nwlbl">
+                <!-- <label>Capture Image</label>
+  <input type="hidden" class="form-control" (change)="onImageChangeFromFile($event)" [(ngModel)]="credentials.imag" [value]="credentials.imag ? credentials.imag : null"
+                              name="webcamImage" id="webcamImage" required>
+  <div class="capimg" *ngIf="webcamImage">
+      <img [src]="webcamImage.imageAsDataUrl" name="image" [(ngModel)]="credentials.image" ngDefaultControl>
+  </div> -->
+                <!-- <div *ngIf="!Camera"  class="fropicture">
+      <div class="capimg tooltip12" *ngIf="!webcamImage">
+          <span class="tooltiptext">Click on camera icon to capture your image<br />
+              <i class="fa fa-long-arrow-down" aria-hidden="true"></i></span>
+          <img src="../../assets/img/images.png"  />
+      </div>
+      <!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> -->
+                <!-- <img *ngIf="!Camera " type="button" (click)="toggleWebcam();" src="../../assets/img/camm11.png" class="regimg" />
+  </div> -->
+
+            </div>
+
+
+            <!-- <button (click)="verifyuser();">Verify</button>
+<button (click)="updatesignature();">Send</button> -->
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+
+</section>
+<!-- 1st view end -->
+
+
+<!-- 2nd view start -->
+
+<section *ngIf="showpdf" class="pdfsection1">
+    <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="cameradiv pd0withposition newwithposition">
+
+            <div class="form-group nwlbl formdiv">
+                <!-- <label>Capture Image</label> -->
+                <!-- <input type="hidden" class="form-control" (change)="onImageChangeFromFile($event)" [(ngModel)]="credentials.imag" [value]="credentials.imag ? credentials.imag : null"
+                        name="webcamImage" id="webcamImage" required> -->
+                        <div class="capimg s_c" *ngIf="webcamImage">
+                            <video #video class="video" ></video>
+                          </div>
+                          <div *ngIf="webcamImage">Your Session Will Expire in <strong style="color: red;">{{countDown}} </strong>seconds</div>
+                <!-- <div class="capimg">
+                    <img [src]="webcamImage.imageAsDataUrl" name="image" [(ngModel)]="credentials.image" ngDefaultControl>
+                </div> -->
+
+                <!-- <div  class="fropicture">
+                        <div class="capimg tooltip12">
+                            <span class="tooltiptext">Click on camera icon to capture your image<br />
+                                <i class="fa fa-long-arrow-down" aria-hidden="true"></i></span>
+                            <img src="../../assets/img/images.png" style="width:  80%;" />
+                        </div> -->
+                <!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> -->
+                <!-- <img  type="button" (click)="toggleWebcam();" src="../../assets/img/camm11.png" class="regimg" /> -->
+                <!-- </div> -->
+
+                <div class="col-md-12 col-sm-12 col-xs-12 signdiv">
+                    <h4>
+                        <span>
+                            <b>{{conveniancecount}}</b>
+                        </span> signatures in {{noofpages}} pages</h4>
+                    <div class="form-group">
+                        <!-- <button *ngIf="!Camera " type="button" (click)="toggleWebcam();" class="btn signbtn fullwdth nwclr">
+                                    <i class="fa fa-camera" aria-hidden="true"></i> Open Camera</button> -->
+                        <button type="button" (click)="rejectdocument()" class="btn signbtn fullwdth rejectbtn">Reject</button>
+                    </div>
+                    <!-- <button (click)="verifyuser();" type="button" class="btn signbtn fullwdth">Verify</button> -->
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12 signdiv">
+                    <h4>
+                        <span>
+                            <b>Once you reject the signing process  </b>
+                        </span> will terminate and you cann't return to page</h4>
+                    <div class="form-group">
+                        <!-- <button *ngIf="!Camera " type="button" (click)="toggleWebcam();" class="btn signbtn fullwdth nwclr">
+                        
+                        
+                            <i class="fa fa-camera" aria-hidden="true"></i> Open Camera</button> -->
+                            <button class="btn signbtn fullwdth senddbtn" (click)="updatesignature();">Send</button>
+                            <a routerLink='/landing'><button type="button" class="btn signbtn fullwdth exittbtn">Exit</button></a>
+                            <button class="btn signbtn fullwdth senddbtn" (click)="downloadpdf();">Download</button>
+
+                    </div>
+                    <!-- <button (click)="verifyuser();" type="button" class="btn signbtn fullwdth">Verify</button> -->
+                </div>
+                <div class="error-msg-div">
+                    <span calss="error-msg">{{error}}</span>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div *ngIf="showpdf"  id="gethtml" class="gethtml" [innerHTML]="documenthtml | safe: 'html'">
+    <div class="col-md-8 col-sm-8 col-xs-12">
+        <!-- <div class="pmydfdiv"> -->
+       
+        <!-- </div> -->
+    </div>
+</div>
+</section>
+
+<!-- 2nd view end -->
+
+<modal #initialModal [hideCloseButton]="true" [closeOnOutsideClick]="false">
+    <modal-content>
+        <div class="signpad" id="signherev" style="z-index:100000">
+            <a routerLink='/exitmessage'
+                class="close-button" title="Close">X</a>
+            <div class="tagline">Apply your Signature</div>
+            <div class="ppup_center">
+                <div class="col-sm-12" style="padding:0 15px 20px 15px">
+                    <div class="col-md-6">
+                        <span class="green_tag">
+                            <i class="fa fa-circle bullet_dot" aria-hidden="true"></i>confirm your name, initials and signature:</span>
+                        <strong class="green_tag">
+                            <i class="fa fa-circle bullet_dot" aria-hidden="true"></i>name:&nbsp;{{username}}</strong>
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+                <div class="col-sm-12" style="padding:20px 15px 0 15px;border:5px solid #858f03; border-radius:0px">
+                    <div class="col-sm-9">
+                        <div class="col-sm-8">
+                            <div class="signature textbox1 signpad_textbox" id="signvhhhh" style="margin-top:19px !important;margin-left:10px !important;">{{username}}</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="short_sign">
+                                <span>{{userinitials}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <input name="selectfontsign" id="selectfontsign" type="hidden" value="cursive">
+                    </div>
+                </div>
+                <div class="col-sm-12" style="padding:20px 15px">
+                    <div class="agree">
+                        <p>By clicking 'Accept' you agree to the Consumer Consent Disclosure, Terms of Service(TOS) and the End User
+                            License Agreement(EULA) and approve the electronic representation of your Signature and Initials for
+                            use when signing any document in this E-Signature Process.</p>
+                    </div>
+                    <div class="col-sm-7" style="padding-left:0">
+                        <a href="javascript:void(0)" style="display:block;width:100%;padding:5px 0;color:#4c435e">Print/Download Consumer Consent Disclosure</a>
+                        <a href="javascript:void(0)" style="display:block;width:100%;color:#4c435e">Print/Download TOS EULA and Agreement Between Partners</a>
+                    </div>
+                    <div class="col-sm-5" style="text-align:right">
+                        <button (click) = "applyinitials()" class="btn btn-primary addusersign bttnn done_btttn" style="width:48%;background:#96450e;border:0px solid #4c435e">APPLY</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </modal-content>
+       
+  </modal>
+
+
+<div *ngIf="showpdf" class="col-md-3 signdiv">
+    <!-- <div class="form-group"> -->
+    <!-- <button *ngIf="!Camera " type="button" (click)="toggleWebcam();" class="btn signbtn fullwdth nwclr">
+      <i class="fa fa-camera" aria-hidden="true"></i> Open Camera</button> -->
+    <!-- <button *ngIf="camera" type="button" class="btn signbtn fullwdth" (click)="triggerSnapshot();" class="btn signbtn">Capture</button>
+</div>
+<button *ngIf="imagecaptured" (click)="verifyuser();"  type="button" class="btn btn-default signbtn">
+  Verify</button> -->
+</div>
+
+<footer *ngIf="!showpdf">
+    <div class="container">
+        <div class="col-md-2 col-sm-2 col-xs-12">
+            <div class="msgimgdiv">
+                <img src="../../assets/img/chat.png" />
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="copyrighttext">
+                <p>COPYRIGHT &copy; 2018.ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="social-icondiv">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/insta.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/fb.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/twitter.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/google-plus.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/you.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/test.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+
+<ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px',fullScreenBackdrop: true }"></ngx-loading>
+
+

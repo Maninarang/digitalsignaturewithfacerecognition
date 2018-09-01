@@ -1,0 +1,310 @@
+<!-- <div class="container">
+
+  <div class="row">
+    
+    <div class="col-md-6">
+
+      <h1 class="form-signin-heading">Sign in</h1>
+      <p class="lead">Not a member? Please <a routerLink="/register">register</a> instead.</p>
+      <div class="alert alert-danger" *ngIf="error">{{error}}</div>
+
+      <form (submit)="login()">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" name="email" placeholder="Enter email" [(ngModel)]="credentials.email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="credentials.password">
+        </div>
+        <button type="submit" class="btn btn-default">Sign in!</button>
+      </form>
+    </div>
+  </div>
+
+</div> -->
+
+
+
+<section class="hdrsec">
+    <div class="logoimg">
+        <img src="../../assets/img/ezee-logo.png" />
+    </div>
+
+
+    <div class="drp drpnw">
+			  			
+        <div class="col-lg-12 col-md-12  col-xs-12">
+           
+           <div class="hide_mob"><a href='/register'>
+                
+                <div class="list-part-home loginbtn">SIGN UP
+
+                </div></a>
+                
+                <a href='/login'>	<div class='list-part-home loginbtn' style="padding: 8px;color: #b59848;">LOG IN 
+                
+                </div></a>
+             </div>
+            
+            <div class="list-part-home lm" style="margin-right: 70px !important;">
+               
+               <li class='dropdown'>
+             
+                <a class='dropdown-toggle' data-toggle='dropdown' aria-expanded='false'><span class='title'> <i class="fa fa-bars"></i>&nbsp;&nbsp;</span></a>
+               
+               <ul class='dropdown-menu'>
+               
+                   <li><a href='/login'>LOG IN</a></li>
+               
+                   <li><a href='/regiser'>SIGN UP</a></li>
+
+               </ul>
+               
+               </li>
+            
+            </div>
+          </div> 
+      </div>
+
+</section>
+
+<section>
+    <div class="my-container">
+        <!-- <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px' , fullScreenBackdrop: true}"></ngx-loading> -->
+        <ng4-loading-spinner [loadingText]="'Please wait...'" [zIndex]="9999"> </ng4-loading-spinner>
+    </div>
+    <div class="container">
+        <div class="col-md-5 col-sm-5 col-xs-12">
+            <div class="logimg">
+                <a href="#">
+                    <img src="../../assets/img/login1.png" />
+                </a>
+            </div>
+        </div>
+        <div class="col-md-7 col-sm-7 col-xs-12">
+            <div class="loginform-outerdiv">
+                <div class="log-reg-btn">
+                    <a class="reg">
+                        <button routerLink="/register" class="reg">Register</button>
+                    </a>
+                    <button class="log">Sign In</button>
+                </div>
+                <div class="formdiv">
+                    <div class="ezeelogintext">
+                        <p>
+                            <img src="../../assets/img/ezee-wyt.png" /> Log In</p>
+                    </div>
+                    <div *ngIf="confirm">
+                        To verify your profile , Check your registered email and follow the process.
+                    </div>
+                    <!-- <form action="/action_page.php"> -->
+                    <form (submit)="login()" #formCtrl="ngForm">
+
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <!-- <div [ngClass]="{'teaser': !teaser_1 }" ></div> -->
+                                <!-- <input type="text" class="form-control" id="" placeholder="Email Address"> -->
+                                <!-- <input type="email" class="form-control" name="email" placeholder="Enter email"  pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" [(ngModel)]="credentials.email" required> -->
+                                <input type="email"  (blur)="checkmail()" id='email' class="form-control" #email="ngModel" name="email" email placeholder="Email Address" [(ngModel)]="credentials.email"
+                                    pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
+                                    
+                                   
+                                   
+                                <span>
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                             
+                            <div class="error-msg-div" *ngIf="mailerror">
+                                <span class="error-msg">{{mailerror}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <!-- <input type="text" class="form-control" id="" placeholder="Password"> -->
+                                <input type="password" id='per' (blur)="checkEmpty()" class="form-control" name="password" placeholder="Password" [(ngModel)]="credentials.password" required>
+
+                                <span>
+                                    <i class="fa fa-lock" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12" style>
+                            <!-- <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me</label>
+                            </div> -->
+
+                            <div class="checkbox">
+                                <!-- <label>
+                                    <input type="checkbox"> Remember me
+                                </label> -->
+                                <label class="container56"> Remember me
+                                    <input type="checkbox" name="rememberme" [(ngModel)]="credentials.rememberme">
+                                    <span class="checkmark"></span>
+                                  </label>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-12">
+                            <div class="form-group">
+                                <p>forgot
+                                    <a style="cursor: pointer;" (click)="opensuccesspop()"> password?</a> 
+                                    <!-- <a href="#">email?</a> -->
+                                </p>
+                            </div>
+                        </div>
+                        <div class="error-msg-div" *ngIf="error"><span class="error-msg">{{error}}</span></div>
+                        <webcam [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam"></webcam>
+
+                        <div *ngIf='!hideimage' class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group nwlbl">
+                                <!-- <label>Capture Image</label> -->
+                                <input type="hidden" class="form-control" (change)="onImageChangeFromFile($event)" [(ngModel)]="credentials.imag" [value]="credentials.imag ? credentials.imag : null"
+                                    name="webcamImage" id="webcamImage" required>
+                                <div class="capimg" *ngIf="webcamImage">
+                                    <img [src]="webcamImage.imageAsDataUrl" name="image" [(ngModel)]="credentials.image" ngDefaultControl>
+                                </div>
+
+                                <div *ngIf="!Camera"  class="fropicture">
+                                    <div class="capimg tooltip12" *ngIf="!webcamImage">
+                                        <div *ngIf="!recapture">
+                                        <span  class="tooltiptext">Click on camera icon to match your image<br />
+                                            <i class="fa fa-long-arrow-down" aria-hidden="true"></i></span>
+                                        <img src="../../assets/img/images.png" style="width:  100%;" />
+                                    </div>
+                                    </div>
+                                    <!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> -->
+                                    <img [ngClass]="{'pulse': teaser_1 }" *ngIf="!recapture " type="button" (click)="toggleWebcam();" src="../../assets/img/camm11.png" class="regimg" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 signdiv">
+                            
+                                <!-- <button *ngIf="!Camera " type="button" (click)="toggleWebcam();" class="btn signbtn fullwdth nwclr">
+                                    <i class="fa fa-camera" aria-hidden="true"></i> Open Camera</button> -->
+                                <button *ngIf="Camera" type="button" (click)="triggerSnapshot();" class="btn signbtn fullwdth">Capture</button>
+                          
+                            
+                                <button type="button"  *ngIf="recapture" (click)="toggleWebcam();"  class="btn signbtn newrecap">Recapture</button>
+                  
+                            <!-- <button *ngIf="shwlogin" [disabled]="!formCtrl.form.valid" type="submit" class="btn btn-default signbtn">
+                                <img src="../../assets/img/ezee-wyt.png" /> Sign In</button> -->
+                                <button [ngClass]="{'pulse': pulsereg }" [disabled]="!formCtrl.form.valid"  type="submit" class="btn signbtn">
+                                    <img src="../../assets/img/ezee-wyt.png" /> Sign In</button>  
+                      
+                        </div>  
+
+                         <p class="jsttext">Or</p>
+
+                        <!--<div class="col-md-12 col-sm-12 col-xs-12 socialbtns">
+                            <div class="fbbtn">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="googlebtn">
+                                <a href="#">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div> -->
+
+                    </form>
+                    <div class="col-md-12 col-sm-12 col-xs-12 signdiv">
+                        <button *ngIf='!withoutimage' (click)='noimage()' class="btn signbtn pulse-button">
+                            <img src="../../assets/img/ezee-wyt.png" /> Login without image
+                        </button>
+                        <button *ngIf='withoutimage' (click)='noimage()' class="btn signbtn">
+                            <img src="../../assets/img/ezee-wyt.png" /> Login with image
+                        </button>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <modal #forgetpassword [hideCloseButton]="true" [closeOnOutsideClick]="false">
+  
+            <modal-content > 
+                    <div  style="border-radius:0px; border:10px solid #688bfc; background:white;">
+                            <div class="modal-headerr">  <!--data-dismiss="modal" aria-label="Close"-->
+                              <button (click)="forgetpassword.close()" type="button" id="fclose" class="close">
+                              <span aria-hidden="true">×</span>
+                              </button>
+                              <h4 class="modal-title" id="exampleModalLabel"><span style=" font-family:'Century Gothic';">FORGOT YOUR PASSWORD</span></h4>
+                            </div>
+                            <div class="modal-body" >
+                              <div class="form-group">
+                                <form class="form-horizontal" name="forgotlogin" id="forgotlogin" method="post" style="">
+                                  <div class="col-lg-12">
+                                    <input type="email" class="form-control" placeholder="Enter your email" name="email" [(ngModel)]="forgotemail" id="forgotemail"  required="">
+                                    <label class="error" id="error_forgotemailp" style="font-size:15px"></label> <label id="loadingwaitf" style="font-size:15px"></label>
+                                  </div>
+                                  <span id="success" style="font-size:15px;color:#00CC33"></span>
+                                  <div class="col-lg-12" style="padding-top:10px">
+                                    <input type="button" class="btn btn-primary bg" (click)="forgetpass()" value="RESET PASSWORD" id="forgotsubmit" name="forgotsubmit">
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                            </div>
+                          </div>  
+                     </modal-content>
+           
+        </modal>
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="col-md-2 col-sm-2 col-xs-12">
+            <div class="msgimgdiv">
+                <img src="../../assets/img/chat.png" />
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="copyrighttext">
+                <p>COPYRIGHT &copy; 2018.ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="social-icondiv">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/insta.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/fb.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/twitter.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/google-plus.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/you.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/test.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

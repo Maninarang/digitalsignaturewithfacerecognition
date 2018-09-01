@@ -1,0 +1,192 @@
+/*footer start*/
+.msgimgdiv {
+    width: 100%;
+    float: left;
+}
+.msgimgdiv img {
+    width: 45px;
+    padding-top: 5px;
+}
+.copyrighttext{
+    text-align: center;
+}
+.copyrighttext p{
+   margin: 0;
+    line-height: 4.3;
+}
+footer {
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    left: 0;
+    padding: 2px 0px 0 0 !important;
+    width: 100%;
+    border-top: 2px solid #b59848;
+    border-bottom: 2px solid #b59848;
+}
+.social-icondiv{
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+.social-icondiv ul li{
+    display: inline-block;
+    line-height: 4;
+
+}
+.social-icondiv ul{
+    padding: 0;
+    margin: 0;
+}
+/*footer end*/
+
+
+.electronicsig-div{
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.electronicsig-div1{
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.electronicsig-div img{
+    width: 150px;
+}
+.pdf-div{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 0 0 0 50px;
+}
+.pdf-div img{
+    width: 100%;
+}
+.boxdiv{
+    width: 100%;
+    float: left;
+    padding: 60px 0;
+}
+.radiobtnbox{
+    width: 100%;
+    float: left;
+    border: 1px solid #b59848;
+}
+.radiobtnbox form{
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+.radiobtnbox form .radio {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.electronicsig-div1 h5{
+    font-size: 19px;
+    font-weight: 600;
+    color: #515904;
+}
+.hdgtop{
+    width: 100%;
+    float: left;
+    background-color: #515904;
+    color: white;
+    margin-bottom: 4px;
+}
+.electronicsig-div2{
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.electronicsig-div2 h5{
+    font-size: 19px;
+    font-weight: 600;
+    color: #515904;
+}
+.radiobtnbox1{
+    width: 100%;
+    float: left;
+}
+.radiobtnbox1 .form-group{
+    margin-bottom: 4px !important;
+    padding: 0px 10px;
+    border: 2px solid #b59748;
+    text-align: left;
+}
+.radiobtnbox1 .form-group h6{
+    font-size: 15px;
+    color: #838f05;
+    font-weight: 600;
+}
+.pd0{
+    padding: 0;
+}
+.btndiv{
+    width: 100%;
+    float: left;
+}
+.btndiv button {
+    background-color: #b59848;
+    width: 160px;
+    padding: 8px;
+    border: none;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btndiv button:hover, .btndiv button:active, .btndiv button:focus{
+    outline: none;  
+}
+.btndiv .btn1 {
+    text-align: left;
+    color: #715732;
+}
+.btndiv .btn2 {
+    text-align: right;
+    color: #715732;
+}
+.btndiv .btn3 {
+    text-align: left;
+}
+.btndiv .btn3 button {
+    color: #fff;
+    background-color: #715732;
+}
+@media screen and (max-width:767px){
+
+.btndiv .btn1 {
+    text-align: center !important;
+}
+.btndiv .btn2 {
+    text-align: center !important;
+}
+.btndiv .btn3 {
+    text-align: center !important;
+}
+.btndiv .btn4 {
+    text-align: center !important;
+}
+.btndiv button {
+    width: 100%;
+}
+
+.pdf-div{
+    padding: 0px;
+}
+.icon56 {
+    text-align: center;
+}
+.social-icondiv {
+    text-align: center;
+}
+}
+@media screen and (max-width:767px){
+	.copyrighttext {
+    
+    font-size: 12px;
+}
+	
+}

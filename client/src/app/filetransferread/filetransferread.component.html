@@ -1,0 +1,351 @@
+
+<!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/signature.css">  -->
+<!-- <link rel="stylesheet" href="assets/css/mycustom.css">  -->
+<section class="hdrsec">
+  <div class="logoimg">
+      <a href="#"><img src="assets/img/ezee-logo.png"/></a>
+  </div>
+</section>
+
+<section class="fullpage">
+  <div class="container" >
+                  
+    <div class="list-part myprofile mobilename" >
+  
+              <li class="dropdown" dropdown >
+           
+     
+        
+    <i class="fa fa-user list5" aria-hidden="true"></i> &nbsp;
+           
+      <span class="title">{{fullname}} &nbsp;</span>
+      <a style="cursor: pointer;" class="dropdown-toggle" dropdownToggle>
+      <div class="downarrow mobiledownarrow"><b class="caret"></b></div></a>
+  
+                <ul *dropdownMenu class="dropdown-menu mobilemenu">
+                  
+      <li><a>Logout</a></li>
+                 
+       <li><a routerLink="/profile">View Profile</a></li>
+                
+       <li id=""><a href="#">Change Password</a></li>
+             
+       <li><a href="#">Membership Order</a></li>
+    
+                </ul>
+  
+             </li>
+       
+  </div>
+  
+    </div>
+
+
+
+
+  <div class="container">
+
+    <div class="">
+    
+      <div class="col-lg-2 col-md-2 col-xs-12 mobilepd">
+         
+        <!--Instructions & logo part start-->		
+            
+        <div style="display:block; margin:0 auto;" class="col-lg-12 mobilepd"> 
+            
+          <a routerLink="/"  data-placement="right" data-toggle="tooltip" data-original-title="" class="homeanchor">
+             <span class="pt51 pt567 mobilehomebtn">
+              <span class="fa fa-home"></span> Home
+             </span>
+           </a>
+           
+         </div>	
+              
+          <a href="">
+              
+            <img class="img-responsive img-portfolio2 digitalimg mobiledigital" src="../../assets/img/home-01.png"  alt="" data-placement="right"> 
+              
+          </a>
+
+   
+    
+    <div class="wrapper2">
+   
+   <li style="list-style:none; cursor:pointer;" class="toggle">
+      
+      <a style="cursor: pointer;" class="list-part2 mobilehomebtn" data-placement="right">
+   
+       <span class="title2">INSTRUCTIONS</span>
+      
+      </a>
+       
+     <ul *ngIf="showinstructions" class="drop-popup mydroppopup" >
+        
+        <div class="arrow-top"><img src="../../assets/img/arrow-top.png"></div>
+         
+        <div class="inst-popup instnew" style="font-family: Century Gothic; font-size: 14px; text-align: left; font-weight: bold; color: #333;">
+        
+        <ul style="list-style: none; padding: 0;">
+        
+            <li style="margin-bottom: 10px;">Step 1:  Upload or drag and drop PDF file.</li>
+        
+            <li style="margin-bottom: 10px;">Step 2:  Check box, if you require an expiration date (not mandatory).</li>
+            
+          <li style="margin-bottom: 10px;">Step 3:  Add participants.</li>
+            
+          <li style="margin-bottom: 10px;">Step 4:  You can rearrange signing order under "priority". Click on arrow up or down to change signing order (not mandatory). Click next to complete.</li>
+     
+     
+        </ul>
+   
+       </div>
+     
+     </ul>
+     
+     </li>
+   
+   </div>
+ 
+ 
+     <div class="clearfix mymsg"></div>	    <!--Instructions & logo part end-->
+     
+   </div>
+    
+   <div class="col-lg-10 col-md-10 col-xs-12">
+       
+    <div class="inner-part8" style="box-shadow:none !important;">
+   
+       <div class="col-lg-12">
+   <div class="col-lg-6">
+     <form class="smartsearchbtn">
+       <div class="input-group list stylish-input-group">
+       <input type="text" class="form-control" style="border-radius:0px; margin-left:9px;" placeholder="Search....." name="pcode" id="pcode">
+       <span class="input-group-addon" style="border-radius:0px;">
+       <button type="submit"> <span class="fa fa-search"></span> </button>
+       </span> </div>
+     </form>
+   </div> 
+   <div class="col-lg-6">
+        
+    <p class="pt10 smartheading">SMART MAIL</p>
+   </div>
+     </div>           
+    
+ <div class="col-lg-12">
+      
+  <div class="tabs-left">
+
+    <ul class="nav nav-tabs6">
+
+      <li class="">
+          <a routerLink="/composemail">
+              <span class="iconimg"><img src="assets/img/envelope.png"/></span>
+              &nbsp;&nbsp;
+              <span class="pt6">Compose</span>
+          </a>
+      </li>
+     
+     <li class="">
+         <a routerLink="/readmail">
+             <span class="iconimg">
+             <img src="assets/img/message-closed-envelope.png"/>
+             </span>
+         &nbsp;&nbsp;
+             <span class="pt6">Read Mail</span>
+         </a>
+     </li>
+
+    <li class="">
+        <a routerLink="/sentmail">
+            <span class="iconimg">
+               <img src="assets/img/sent-mail.png"/>
+            </span>
+            &nbsp;&nbsp;
+            <span class="pt6">Sent</span>
+        </a>
+    </li>
+   
+    <li class="active">
+        <a routerLink="/trashmail">
+            <span class="iconimg">
+               <img src="assets/img/trash.png"/>
+            </span>
+            &nbsp;&nbsp;
+            <span class="pt6">Trash</span>
+        </a>
+    </li>
+    <li class="">
+        <a routerLink="/contactmail">
+            <span class="iconimg">
+               <img src="assets/img/phone-receiver.png"/>
+            </span>
+            &nbsp;&nbsp;
+            <span class="pt6">Contact</span>
+        </a>
+    </li>
+
+</ul>             
+  
+<div id="myTabContent" class="tab-content mobilecontent" style="opacity: 1;">			  
+
+
+
+      
+<div class="tab-pane active" id="home">
+<div class="col-lg-12 col-md-12 col-xs-12">
+       
+ <div class="">
+
+   <div class="table-responsive jug-2">
+               <div class="smartpadding"> 
+       <div class="col-md-6 col-sm-6 col-xs-6 nopadding"> 
+         <a href="#">
+         <img src="assets/img/refresh.png" class="img-responsive img1">
+         </a> 
+       </div>
+       <div class="col-md-6 col-sm-6 col-xs-6 smartright nopadding"> 
+         <button class="smartmovebtn" >Move to sent item</button>
+         <button class="smartemptybtn" >Empty Trash</button>
+       </div>
+               </div>
+               <div class="clearfix"></div>
+               <form name="home2">
+                   
+                 <table class="table table-bordered table-hover table-striped">
+                   <thead>
+                     <tr class="smartmail">
+                       <th>
+           <div class="checkbox">
+             <label class="container57">
+               <input type="checkbox" [checked]="isAllChecked()" (change)="checkAll($event)">
+               <span class="checkmark"></span>
+             </label>
+           </div>
+         </th>
+                       <th>From</th>
+                       <th>To</th>
+                       <th>Subject</th>
+                       <th>Date</th>
+                       <th>Action</th>
+                     </tr>
+                   </thead>
+                   <tbody>
+                    <tr *ngFor="let item of trashmails" class="unread">
+                      <td>
+                   <div class="checkbox">
+                     <label class="container57">
+                       <input type="checkbox" name="checked" value="{{item._id}}" [(ngModel)]="item.selected" >
+                       <span class="checkmark"></span>
+                     </label>
+                   </div>
+                 </td>
+                     <td>{{item.fromemail}}</td>
+                     <td>{{item.toemail}}</td>
+                     <td class="text-right">{{item.subject}}</td>
+                     <td>{{item.dateadded | amDateFormat: 'MM/DD/YYYY'}}</td>
+                     <td>
+                        <a href="#">
+                          <img src="assets/img/view.png" class="img-responsive"/>
+                        </a>
+                        </td>
+                 </tr>
+                   </tbody>
+                   
+                 </table>
+               </form>
+                   <div class="smartdelete"> 
+       <a >
+         <img src="assets/img/delate-2.png" style="float:left;" class="img-responsive img2 " />
+       </a> 
+       </div>
+   </div>
+
+ </div>			  
+   
+</div>
+
+    
+<!-- /tab-content -->
+
+
+</div>
+</div>
+
+ <div class="clearfix"></div>
+  
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="shade">
+  
+  <div class="popmsg">
+   
+   <p style="color:#FFFFFF; text-align:center;font-weight:900;font-size:16px;padding:10px 0; margin:0;" id="ses"></p>
+ 
+ </div>
+
+ </div> 
+</div>
+</div>   
+</section>
+
+
+<footer>
+  <div class="container">
+      <div class="col-md-2 col-sm-2 col-xs-12">
+          <div class="msgimgdiv">
+              <img src="assets/img/chat.png" />
+          </div>
+      </div>
+      <div class="col-md-5 col-sm-5 col-xs-12">
+          <div class="copyrighttext">
+              <p>COPYRIGHT &copy; 2018.ALL RIGHTS RESERVED</p>
+          </div>
+      </div>
+      <div class="col-md-5 col-sm-5 col-xs-12">
+          <div class="social-icondiv">
+              <ul>
+                  <li>
+                      <a href="#">
+                          <img src="assets/img/insta.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="assets/img/fb.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="assets/img/twitter.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="assets/img/google-plus.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="assets/img/you.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="assets/img/test.png" />
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+
+

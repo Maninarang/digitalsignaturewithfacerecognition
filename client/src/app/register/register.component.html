@@ -1,0 +1,380 @@
+<section class="hdrsec">
+    <div class="logoimg">
+        <img src="../../assets/img/ezee-logo.png" />
+    </div>
+
+
+    <div class="drp drpnw">
+
+        <div class="col-lg-12 col-md-12  col-xs-12">
+
+            <div class="hide_mob">
+                <a href='/register'>
+
+                    <div class="list-part-home loginbtn">SIGN UP
+
+                    </div>
+                </a>
+
+                <a href='/login'>
+                    <div class='list-part-home loginbtn' style="padding: 8px;color: #b59848;">LOGhgccvIN
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="list-part-home lm" style="margin-right: 70px !important;">
+
+                <li class='dropdown'>
+
+                    <a class='dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>
+                        <span class='title'>
+                            <i class="fa fa-bars"></i>&nbsp;&nbsp;</span>
+                    </a>
+
+                    <ul class='dropdown-menu'>
+
+                        <li>
+                            <a href='/login'>LOG IN</a>
+                        </li>
+
+                        <li>
+                            <a href='/regiser'>SIGN UP</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </div>
+            <!-- <div *ngIf="userregistered" class="registersuccessmsg">
+                To verify your profile , Check your registered email and follow the process .
+            </div> -->
+        </div>
+    </div>
+
+
+
+</section>
+<!-- <section class="hdrsec">
+        <div class="logoimg">
+            <img src="../../assets/img/ezee-logo.png" style="width: 100%;" />
+        </div>
+      </section> -->
+<section>
+    <div class="my-container">
+        <!-- <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px', fullScreenBackdrop: true}"></ngx-loading> -->
+        <ng4-loading-spinner [loadingText]="'Please wait...'" [zIndex]="9999"> </ng4-loading-spinner>
+
+    </div>
+    <div class="container">
+        <div class="col-md-5 col-sm-5 col-xs-12">
+            <div class="logimg">
+                <a href="#">
+                    <img src="../../assets/img/signup1.png " />
+                </a>
+            </div>
+        </div>
+        <div class="col-md-7 col-sm-7 col-xs-12">
+            <div class="loginform-outerdiv">
+                <div class="log-reg-btn">
+                    <button class="log">Register</button>
+                    <a routerLink="/login">
+                        <button class="reg">Sign In</button>
+                    </a>
+                </div>
+                <!-- <div #top *ngIf="userregistered" class="registersuccessmsg"> -->
+                        <!-- <div   class="registersuccessmsg"> -->
+                    <!-- To verify your profile , Check your registered email and follow the process .
+                </div> -->
+                <div class="formdiv">
+                   
+                    <div class="ezeelogintext">
+                        <p>
+                            <img src="../../assets/img/ezee-wyt.png" /> User Registration
+                        </p>
+                    </div>
+                    <form (submit)="register()" #formCtrl="ngForm" name="myForm" >
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <!-- <input type="text" class="form-control" id="" plastyle="
+    color: #a94442 !important;
+"ceholder="First Name"> -->
+                                <input type="text" class="form-control" id='fname' name="fname" (blur)='fname()' placeholder="First Name*" [(ngModel)]="credentials.fname"
+                                    required>
+
+                                <span>
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="error-msg-div" *ngIf="fnameerror">
+                                <span style="text-align: center;margin-top: 19px;" class="error-msg">{{fnameerror}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id='lname' name="lname" (blur)='lname()' placeholder="Last Name*" [(ngModel)]="credentials.lname"
+                                    required>
+
+                                <!-- <input type="text" class="form-control" id="" placeholder="Last Name"> -->
+                                <span>
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="error-msg-div" *ngIf="lnameerror" style="color: #a94442 !important; ">
+                                <span class="error-msg">{{lnameerror}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id='email' #email="ngModel" name="email" email placeholder="Email Address*" [(ngModel)]="credentials.email"
+                                    (blur)="checkmail()" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
+
+                                <!-- <input type="text" class="form-control" id="" placeholder="Email Address"> -->
+                                <span>
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="error-msg-div" *ngIf="mailerror" style="color: #a94442 !important; ">
+                                <span class="error-msg">{{mailerror}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="Number" id='number' (keypress)="onlynumber($event)" (blur)='number()' placeholder="Mobile Number*" [(ngModel)]="credentials.phonenumber"
+                                    required>
+                                <!-- <input type="text" class="form-control" id="" placeholder="Mobile Number"> -->
+                                <span>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="error-msg-div" *ngIf="phoneerror" style="color: #a94442 !important; ">
+                                <span class="error-msg">{{phoneerror}}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <input type="password" class="form-control" (focus)="isFocused()" id='password' (blur)='blurr()' (keyup)='password()' name="password"
+                                    placeholder="Password*" [(ngModel)]="credentials.password" required>
+                                 <span>
+                                    <i class="fa fa-lock" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="error-msg-div" *ngIf="cpassworderror" style="color: #a94442 !important; ">
+                                <!-- <span class="error-msg">{{passworderrorr}}</span> -->
+                            </div>
+                            <!-- start pswd_info -->
+                            <div class="pwdrules" *ngIf="jagveer">
+                                <div class="errorline" [ngClass]="{'strongpassword': passworderrorr=='Strong'}">{{passworderrorr}}</div>
+                                <div class="strength0"></div>
+                                <div class="myrulesli">
+                                    <strong>Strong Password Tips:</strong>
+                                    <ul>
+                                        <li class="invalid">At least 8 characters</li>
+                                        <li class="invalid">At least one number</li>
+                                        <li class="invalid">At least one lowercase &amp; one uppercase letter</li>
+                                        <li class="invalid">At least one special character</li>
+                                    </ul>
+                                </div>
+                                <!-- END pswd_info -->
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <input type="password" class="form-control gt" id='cpassword' (blur)='cpassword()' name="cpassword" placeholder="Confirm Password*"
+                                    [(ngModel)]="credentials.cpassword" required>
+                                <!-- <div class="alert alert-danger" *ngIf="credentials.cpassword != credentials.password"> Password and Confirm password do not match</div> -->
+                                <!-- <span *ngIf="credentials.cpassword === credentials.password"> MATCHED{{credentials.cpassword}} </span> -->
+                                <!-- <input type="text" class="form-control" id="" placeholder="Confirm Password"> -->
+                                <span>
+                                    <i class="fa fa-lock" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="error-msg-div" *ngIf="cpassworderror" style="color: #a94442 !important; ">
+                                <span class="error-msg">{{cpassworderror}}</span>
+                            </div>
+                        </div>
+                        <div *ngIf="!withoutImage">
+                        <webcam [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam"></webcam>
+
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+
+                            <div class="form-group nwlbl">
+
+                                <!-- <label>Capture Image</label> -->
+                                <input class="form-control" type="hidden" (change)="onImageChangeFromFile($event)" [(ngModel)]="credentials.imag" [value]="credentials.imag ? credentials.imag : null"
+                                    name="webcamImage" id="webcamImage" required>
+                                <div class="capimg tooltip12" *ngIf="webcamImage">
+                                    <div *ngIf="!recapture">
+                                        <span class="tooltiptext">
+                                            Click on camera icon to capture your image
+                                            <br />
+                                            <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                    <img [src]="webcamImage.imageAsDataUrl" name="image" [(ngModel)]="credentials.image" ngDefaultControl>
+
+                                </div>
+
+                                <div *ngIf="!Camera" class="fropicture">
+                                    <div class="capimg tooltip12" *ngIf="!webcamImage ">
+                                        <div *ngIf="!recapture">
+                                            <span class="tooltiptext">
+                                                Click on camera icon to capture your image
+                                                <br />
+                                                <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../../assets/img/images.png" />
+                                    </div>
+                                    <!-- *ngIf="!hideimg" -->
+                                    <img type="button" *ngIf="!recapture" (click)="toggleWebcam();" src="../../assets/img/camm11.png" class="regimg" />
+                                    <!-- <webcam [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam"></webcam> -->
+                                </div>
+                            </div>
+                            <div class="error-msg-div" *ngIf="imageerror" style="color: #a94442 !important; ">
+                                <span class="error-msg">{{imageerror}}</span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 signdiv">
+                            <div class="form-group">
+                                <!-- <button type="button" class="btn btn-default" (click)="triggerSnapshot();">Capture</button>
+          <button type="button" class="btn btn-default" (clingIf="credentials.cpassword != credentials.password"ck)="toggleWebcam();">Open Camera</button> -->
+                                <!-- <button *ngIf="!Camera" type="button" (click)="toggleWebcam();" class="btn signbtn nwclr">
+                                    <i class="fa fa-camera" aria-hidden="true"></i> Open Camera</button> -->
+                                <button *ngIf="Camera" type="button" (click)="triggerSnapshot();" class="btn signbtn">Capture</button>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 signdiv">
+                            <button *ngIf="recapture" type="button" (click)="toggleWebcam();" class="btn signbtn">Recapture</button>
+                        </div>
+                        
+                        <div *ngIf="credentials.cpassword == credentials.password"  class="col-md-12 col-sm-12 col-xs-12 signdiv">
+                            <button [disabled]="!formCtrl.form.valid" type="submit" class="btn signbtn">
+                                <img src="../../assets/img/ezee-wyt.png" /> Register
+                            </button>
+                        </div>
+                        <div class="error-msg-div" *ngIf="error">
+                            <span class="error-msg">{{error}}</span>
+                        </div>
+
+                        <div *ngIf="credentials.cpassword != credentials.password" class="col-md-12 col-sm-12 col-xs-12 signdiv">
+                            <button [disabled]="'!formCtrl.form.valid' || '!cpassworderror'" type="submit" class="btn btn-default signbtn">
+                                <img src="../../assets/img/ezee-wyt.png" /> Register
+                            </button>
+                        </div>
+                    </form>
+<div *ngIf="withoutImage" >
+    <p class="jsttext">Or</p>
+
+
+    <div class="col-md-12 col-sm-12 col-xs-12 signdiv">
+        <button  type="button" (click)="registerwithoutimage();" class="btn signbtn">
+            <img src="../../assets/img/ezee-wyt.png" /> Register With Image
+        </button>
+    </div>
+  
+</div>
+<div *ngIf="!withoutImage">
+    <p class="jsttext">Or</p>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 signdiv">
+        <button  type="button" (click)="registerwithoutimage();" class="btn signbtn">
+            <img src="../../assets/img/ezee-wyt.png" /> Register Without Image
+        </button>
+         <!-- <a (click)="opensuccesspop()"> password?</a>  -->
+    </div>
+</div>
+<!-- <div *ngIf="userregistered" #top class="registersuccessmsg">
+    To verify your profile , Check your registered email and follow the process .
+</div> -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <modal #sucess [hideCloseButton]="true" [closeOnOutsideClick]="false">
+  
+            <modal-content > 
+                    <div class="modal-dialog" role="document">
+                            <div class="modal-content" style="border-radius:0px; border:10px solid #5cb85c;">
+                              <div class="modal-headerr" style="border:0px;">  <!--data-dismiss="modal" aria-label="Close"-->
+                                <button type="button" id="fclose" class="close">
+                                <!-- <span aria-hidden="true">×</span> -->
+                                </button>
+                                <h4 class="modal-title" id="exampleModalLabel"><span style=" font-family:'Century Gothic';">To verify your profile , Check your registered email and follow the process.</span></h4>
+                              </div>
+                              <div class="modal-body" style="border:0px;">
+                                <div class="form-group">
+                                  <!-- <form class="form-horizontal" name="forgotlogin" id="forgotlogin" method="post" style=""> -->
+                                   <span id="success" style="font-size:15px;color:#00CC33"></span>
+                                    <div class="col-lg-12" style="padding-top:10px; text-align:center; ">
+                                      <input type="button" class="btn btn-success bg" style="width: 70%; font-size:19px;" value="Success" (click)="success()" name="forgotsubmit">
+                                    </div>
+                                  <!-- </form> -->
+                                </div>
+                              </div>
+                              <div class="modal-footer" style="border:0px;">
+                              </div>
+                            </div>
+                          </div>
+                     </modal-content>
+           
+        </modal>
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="col-md-2 col-sm-2 col-xs-12">
+            <div class="msgimgdiv">
+                <img src="../../assets/img/chat.png" />
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="copyrighttext">
+                <p>COPYRIGHT &copy; 2018.ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="social-icondiv">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/insta.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/fb.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/twitter.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/google-plus.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/you.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/test.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

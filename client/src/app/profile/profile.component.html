@@ -1,0 +1,169 @@
+
+
+<section class="hdrsec">
+  <div class="logoimg">
+      <!-- <img src="../../assets/img/ezee-logo.png"/> -->
+      <a routerLink='/landing'><img src="../../assets/img/ezee-logo.png"/></a>
+      
+  </div>
+</section>
+
+<section>
+  <div class="container">
+        <ng4-loading-spinner [loadingText]="'Please wait...'" [zIndex]="9999"> </ng4-loading-spinner>
+      <div class="col-md-1"></div>
+          <div class="col-md-10 col-sm-12 col-xs-12">
+              <div class="editprdiv">
+                  <div class="topbtndiv">
+                      <div class="col-md-6 col-sm-6 col-xs-12 pd0 h_P">
+                          <a routerLink="/landing"><button class="homebtn"><i class="fa fa-home" aria-hidden="true"></i> HOME</button></a>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-xs-12 pd0 p_p">
+                          <div class="dropdown" dropdown>
+                              <button class="dropdown-toggle homebtn" type="button" dropdownToggle>
+                                  <i class="fa fa-user" aria-hidden="true"></i> {{ fullname }}
+                                  <span class="caret"></span>
+                              </button>
+                              <!-- <ul class="dropdown-menu secdryul1">
+                                  <li class="bordrbtm"><a href="#">Option1</a></li>
+                                  <li class="bordrbtm"><a href="#">Option2</a></li>
+                                  <li><a href="#">Option3</a></li>
+                              </ul> -->
+                              <ul *dropdownMenu class="dropdown-menu mobilemenu">
+                
+                                    <li><a (click)="logout();">Logout</a></li>
+                                               
+                                     <li><a routerLink="/profile">View Profile</a></li>
+                                              
+                                     <li id=""><a href="#">Change Password</a></li>
+                                           
+                                     <li><a href="#">Membership Order</a></li>
+                                  
+                                              </ul>
+                          </div>
+
+                          <!-- <li class="dropdown" dropdown >
+         
+   
+      
+                                <i class="fa fa-user list5" aria-hidden="true"></i> &nbsp;
+                                       
+                                  <span class="title">{{ details?.first_name }} &nbsp;</span>
+                                  <a style="cursor: pointer;" class="dropdown-toggle" dropdownToggle>
+                                  <div class="downarrow mobiledownarrow"><b class="caret"></b></div></a>
+                              
+                                            <ul *dropdownMenu class="dropdown-menu mobilemenu">
+                                              
+                                  <li><a (click)="logout();">Logout</a></li>
+                                             
+                                   <li><a routerLink="/profile">View Profile</a></li>
+                                            
+                                   <li id=""><a href="#">Change Password</a></li>
+                                         
+                                   <li><a href="#">Membership Order</a></li>
+                                
+                                            </ul>
+                              
+                                         </li> -->
+                      </div>
+                  </div>
+
+                  <div class="boxmain">
+                      <div class="hding">
+                          <h3>EDIT PROFILE- {{ firstname }}</h3>
+                      </div>
+                      
+                          <div class="formdiv">
+                            
+
+                              <form class="form-horizontal p_f" (submit)="update()" #formCtrl="ngForm" name="updateForm">
+                                <div *ngIf="response" class='{{class}}'>{{msg}}</div>  
+                                <div class="form-group">
+                                      <label class="control-label col-sm-2" for="">First Name*</label>
+                                      <div class="col-sm-10">
+                                          <input type="text" name="first_name" [(ngModel)]="details.first_name" required value ="{{details?.first_name}}" class="form-control" id="">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="control-label col-sm-2" for="">Last Name*</label>
+                                      <div class="col-sm-10">
+                                          <input type="text" name="last_name" [(ngModel)]="details.last_name"  value ="{{ details?.last_name }}" class="form-control" required id="">
+                                      </div>
+                                  </div>
+                                  <div class="form-group plusdiv">
+                                      <label class="control-label col-sm-2" for="">Email*</label>
+                                      <div class="col-sm-10">
+                                          <input type="email" disabled name="email" [(ngModel)]="details.email" value ="{{ details?.email }}" class="form-control" required id="">
+                                          <!-- <span class="pluscircle dropdown" data-toggle="dropdown"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                          
+                                              <ul class="dropdown-menu edul">
+                                                  <li class="addvrfy">Add and Verify Secondary Email</li>
+                                                  <li class="addinpt"><input type="text" class="form-control" id="" /></li>
+                                                  <li class="addbtnnn"><button>Add</button></li>
+                                              </ul> -->
+                                          
+                                      </div>
+                                  </div>
+                                  <!-- <div class="form-group">
+                                      <label class="control-label col-sm-2" for="">Secondary Email*</label>
+                                      <div class="col-sm-10">
+                                          <input type="email" name="secEmail" [(ngModel)]="details.secEmail" required class="form-control" id="">
+                                          <span class="dropdown inptdrp" data-toggle="dropdown"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
+                                          <ul class="dropdown-menu secdryul">
+                                              <li class="bordrbtm"><a href="#">Change To Primary</a></li>
+                                              <li><a href="#">Delete Email</a></li>
+                                          </ul>
+                                      </div>
+                                  </div> -->
+                                  <div class="form-group">
+                                      <label class="control-label col-sm-2" for="">Mobile*</label>
+                                      <div class="col-sm-10">
+                                          <input type="text" name="phonenumber"[(ngModel)]=" details.phonenumber" value ="{{ details?.phonenumber }}" required class="form-control" id="">
+                                        
+                                      </div>
+                                  </div>
+                                
+                                  <div class="form-group">
+                                      <div class="col-md-12 col-sm-12 col-xs-12 signdiv">
+                                          <button type="submit" class="btn signbtn">Update</button>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      
+                  </div>
+
+              </div>
+          </div>
+      <div class="col-md-1"></div>
+  <button id="hidemsg" style="display:none" (click) = "clear()">Hello</button>
+      
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="container">
+      <div class="col-md-2 col-sm-2 col-xs-12">
+          <div class="msgimgdiv">
+              <img src="../../assets/img/chat.png" />
+          </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="copyrighttext">
+              <p>COPYRIGHT &copy; 2018.ALL RIGHTS RESERVED</p>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="social-icondiv">
+              <ul>
+                  <li><a href="#"><img src="../../assets/img/insta.png" /></a></li>
+                  <li><a href="#"><img src="../../assets/img/fb.png" /></a></li>
+                  <li><a href="#"><img src="../../assets/img/twitter.png" /></a></li>
+                  <li><a href="#"><img src="../../assets/img/google-plus.png" /></a></li>
+                  <li><a href="#"><img src="../../assets/img/you.png" /></a></li>
+                  <li><a href="#"> <img src="../../assets/img/test.png" /></a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>

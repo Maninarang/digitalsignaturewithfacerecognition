@@ -1,0 +1,313 @@
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="assets/css/mycss.css">  -->
+<style>
+  .tooltip-inner {
+    width: 125px;
+    background:#b59848;
+    padding:5px 5px 5px 5px;
+    font-size:14px;
+    font-weight:bolder;
+height:auto;
+  }
+
+.largefilep {
+position:fixed;
+width:100%;
+opacity:0.6;
+filter:alpha(opacity=60);
+top:0px;
+min-height:200px;
+height:100%;
+z-index:9999999999;
+background:#2c846d;
+font-size:20px;
+text-align:center;
+display:none;
+} 
+
+.encryptfilep {
+position:fixed;
+width:100%;
+opacity:0.6;
+filter:alpha(opacity=60);
+top:0px;
+min-height:200px;
+height:100%;
+z-index:9999999999;
+background:#5b4f71;
+font-size:20px;
+text-align:center;
+display:none;
+} 
+
+.digitalfilep {
+position:fixed;
+width:100%;
+opacity:0.6;
+filter:alpha(opacity=60);
+top:0px;
+min-height:200px;
+height:100%;
+z-index:9999999999;
+background:#96450e;
+font-size:20px;
+text-align:center;
+display:none;
+}
+
+.dropdown-menu {
+    left: 25%;
+  min-width: 100px;
+  margin-top:0%;
+  
+}	
+.caret {
+
+  color: #b49948;
+} 
+
+@media screen and (min-width: 1920px)
+{
+.latest-trend-box a img {
+  width: 195px;
+ 
+}
+}
+
+@media screen and (max-width: 699px) {
+  .hide_mob {
+      display: none;
+
+  }
+  
+}
+
+@media screen and (min-width: 699px) {
+  .lm {
+      display: none;
+      
+  }
+  
+}
+
+</style>
+
+
+
+
+
+<section class="hdrsec">
+  <div class="logoimg">
+      <img src="../../assets/img/ezee-logo.png" />
+  </div>
+
+
+  <div class="drp drpnw">
+            
+      <div class="col-lg-12 col-md-12  col-xs-12">
+         
+         <div class="hide_mob"><a href='/register'>
+              
+              <div class="list-part-home loginbtn">SIGN UP
+
+              </div></a>
+              
+              <a href='/login'>	<div class='list-part-home loginbtn' style="padding: 8px;color: #b59848;">LOG IN 
+              
+              </div></a>
+           </div>
+          
+          <div class="list-part-home lm" style="margin-right: 70px !important;">
+             
+             <li class='dropdown'>
+           
+              <a class='dropdown-toggle' data-toggle='dropdown' aria-expanded='false'><span class='title'> <i class="fa fa-bars"></i>&nbsp;&nbsp;</span></a>
+             
+             <ul class='dropdown-menu'>
+             
+                 <li><a href='/login'>LOG IN</a></li>
+             
+                 <li><a href='/regiser'>SIGN UP</a></li>
+
+             </ul>
+             
+             </li>
+          
+          </div>
+        </div> 
+    </div>
+
+</section>
+
+<!-- Main content -->
+<section class="content newcn">
+  <div class="saved-img-box">
+      <div class="headingsv">
+          <h3>Saved Image</h3>
+          <span><i class="fa fa-filter" aria-hidden="true"></i></span>
+      </div>
+<div class="innercntntbox">
+<div class="col-md-7 col-sm-7 col-xs-12 pd0">
+<div class="svimgdiv">
+  <img src="./assets/img/picture1.jpg" />
+</div> 
+</div>
+<div class="col-md-5 col-sm-5 col-xs-12 pd0">
+<div class="txtdiv">
+  <ul>
+    <li><b>Name <span>Alex Shah</span></b></li>
+    <li><b>Document Name <span>New Document 1</span></b></li>
+    <li><b>Capture Date <span>1-09-2018</span></b></li>
+    <li><b>Capture Time <span>21:51:19 PM</span></b></li>
+    <li><b>Capture Location <span>New Delhi, India</span></b></li>
+  </ul>
+</div>
+</div>
+      </div>
+
+
+
+<!-- <div class="slider-sec">
+<div class="">
+<div class="col-md-12 col-sm-12 col-xs-12">
+  <div id="Carousel" class="carousel slide">
+         
+        
+         
+       
+    <div class="carousel-inner myinrslider">
+          
+        <div class="item active">
+         <div class="row">
+          <div class="col-md-1 col-sm-1 col-xs-1"></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://reg.thonburi-u.ac.th/registrar/home.asp" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg1"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.spu.ac.th/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg2"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.spu.ac.th/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg3"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="https://www.mahidol.ac.th/th/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg4"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.kkopenzoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg5"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg6"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg6"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg7"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg8"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg9"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-1"></div>
+         </div>
+        </div>
+         
+        <div class="item">
+        <div class="row">
+          <div class="col-md-1 col-sm-1 col-xs-1"></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://reg.thonburi-u.ac.th/registrar/home.asp" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg1"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.spu.ac.th/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg2"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.spu.ac.th/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg3"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="https://www.mahidol.ac.th/th/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg4"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.kkopenzoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg5"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg6"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg6"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg7"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg8"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg9"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-1"></div>
+         </div>
+        </div>
+         
+        <div class="item">
+        <div class="row">
+          <div class="col-md-1 col-sm-1 col-xs-1"></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://reg.thonburi-u.ac.th/registrar/home.asp" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg1"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.spu.ac.th/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg2"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.spu.ac.th/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg3"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="https://www.mahidol.ac.th/th/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg4"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.kkopenzoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg5"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg6"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg6"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg7"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg8"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-xs-2"><div class="thmbimg"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="./assets/img/picture1.jpg" alt="Image" class="opimg9"></a></div></div>
+           <div class="col-md-1 col-sm-1 col-sm-1 col-xs-1"></div>
+         </div>
+        </div>
+         
+
+         
+    </div>
+    
+    
+     
+        <a class="left carousel-control" href="#Carousel" data-slide="prev">
+        <span class="fa fa-chevron-left"  aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#Carousel" data-slide="next">
+        <span class="fa fa-chevron-right"  aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
+   
+    </div>
+</div>
+
+</div>
+</div> -->
+  </div>
+</section>
+
+<script>
+$(document).ready(function() {
+$('#Carousel').carousel({
+interval: 3000
+})
+});
+</script>
+<!-- /.content -->
+
+<footer id="footer">
+  <div class="container">
+      <div class="col-md-2 col-sm-2 col-xs-12">
+          <div class="msgimgdiv">
+              <img src="../../assets/img/chat.png" />
+          </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="copyrighttext">
+              <p>COPYRIGHT &copy; 2018.ALL RIGHTS RESERVED</p>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="social-icondiv">
+              <ul>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/insta.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/fb.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/twitter.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/google-plus.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/you.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/test.png" />
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+

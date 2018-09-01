@@ -1,0 +1,72 @@
+.logimg{
+    text-align: center;
+    padding: 130px 20px;
+}
+.logimg img{
+    width: 200px;
+}
+
+canvas.imageLayer {
+    border: 2px solid #d07c00;
+    height: 419px;
+    width: 100%; margin-top: 16px;
+}
+.zoom_b{
+    margin: 15px 0;
+    background: #865002;
+    color: #fff;
+    box-shadow: none;
+    border: none;
+    padding: 3px 10px; cursor: pointer; float: left; width: 135px;}
+ .z_m {
+        position: static !important;
+    }
+/*footer start*/
+.msgimgdiv {
+    width: 100%;
+    float: left;
+}
+.msgimgdiv img {
+    width: 45px;
+    padding-top: 5px;
+}
+.copyrighttext{
+    text-align: center;
+}
+.copyrighttext p{
+   margin: 0;
+    line-height: 4.3;
+}
+footer {
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    left: 0;
+    padding: 2px 0px 0 0 !important;
+    width: 100%;
+    border-top: 2px solid #b59848;
+    border-bottom: 2px solid #b59848;
+    float: left;
+    position: fixed; bottom:0; z-index: 99;
+}
+.social-icondiv{
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+.social-icondiv ul li{
+    display: inline-block;
+    line-height: 4;
+
+}
+.social-icondiv ul{
+    padding: 0;
+    margin: 0;
+}
+
+img.ng-untouched.ng-pristine.ng-valid {
+    width: 100%;
+}
+video {
+    width: 300%;
+}
+/*footer end*/

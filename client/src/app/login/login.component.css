@@ -1,0 +1,691 @@
+.loginform-outerdiv{
+    width: 100%;
+    float: left;
+    background-color: #3079d8;
+    margin: 100px 0;
+    padding: 20px;
+}
+.logimg{
+    text-align: center;
+    padding: 230px 20px;
+}
+.logimg img{
+    width: 55%;
+}
+.log-reg-btn{
+    width: 100%;
+    float: left;
+}
+.log-reg-btn button{
+    width: 50%;
+    float: left;
+    padding: 8px;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0px 2px 1px 0px #715732;
+}
+.log-reg-btn .reg{
+    background-color: #b59848;
+    color: #715732;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.log-reg-btn .log{
+    background-color: #715732;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.log-reg-btn .reg:hover{
+    background-color: #a2873b;
+}
+.log-reg-btn .log:hover{
+    background-color: #614928;
+}
+.modal-body.digitalmodalbody {
+    padding: 0px !important;
+}
+
+.formdiv{
+    width: 100%;
+    float: left;
+    border: 2px solid #3a8ae9;
+    padding-bottom: 25px;
+}
+.ezeelogintext{
+    width: 100%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+.ezeelogintext img{
+    width: 84px;
+    position: relative;
+    top: -12px;
+}
+.ezeelogintext p{
+    width: 80%;
+    float: left;
+    border-bottom: 2px solid #3a8ae9;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 29px;
+    color: white;
+    margin: 0px 61px;
+    padding: 17px 0;
+
+}
+.formdiv .form-group input{
+    border: 1px solid #b59748;
+    position: relative;
+    color: #555;
+    font-size: 15px;
+    border-radius: 0;
+}
+.formdiv .form-group span{
+    position: absolute;
+    right: 26px;
+    color: #715732;
+    top: 6px;
+}
+.formdiv .form-group p{
+   text-align: right;
+    color: white;
+}
+.formdiv .form-group p a{
+    color: #b6daff;
+}
+.formdiv .form-group p a:hover{
+    color: #89c0f9;
+}
+.formdiv .checkbox{
+    color: white;
+    margin: 0;
+}
+.formdiv form{
+    width: 100%;
+    float: left;
+    padding: 0 40px;
+}
+.formdiv .signbtn {
+    width: 290px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #715632;
+    border: none;
+    /* box-shadow: 0px 0px 9px 0px #5d5d5d; */
+    border-radius: 0;
+    margin: 20px 0 0;
+
+}
+.formdiv .signdiv{
+    text-align: center;
+}
+.formdiv .signbtn:hover, .formdiv .signbtn:active, .formdiv .signbtn:focus, .formdiv .signbtn:active:focus{
+    box-shadow: none;
+    transition: 0.5s;
+    background-color: #6b5232;
+    outline: none;
+}
+.formdiv .signbtn img{
+    width: 34px;
+    position: relative;
+    top: -2px;
+}
+::placeholder {
+    color: #8e8e8e;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #8e8e8e;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #8e8e8e;
+}
+.jsttext{
+    text-align: center;
+    width: 100%;
+    color: white;
+    float: left;
+    margin-bottom: 0;
+	margin-top: 10px;
+}
+.socialbtns{
+    width: 100%;
+    float: left;
+    padding: 0 112px;
+}
+.socialbtns a{
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    padding: 6px;
+    font-size: 17px;
+}
+.socialbtns .fbbtn a{
+    background-color: #3b5999;
+}
+.socialbtns .googlebtn a{
+    background-color: #de4b39;
+}
+.socialbtns .fbbtn a:hover, .socialbtns .fbbtn a:active, .socialbtns .fbbtn a:focus {
+    background-color: #304a82;
+}
+.socialbtns .googlebtn a:hover, .socialbtns .googlebtn a:focus, .socialbtns .googlebtn a:active {
+    background-color: #c53c2b;
+}
+.capimg{
+    width: 100%;
+    float: left;
+    height: 361px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+.capimg img{
+    width: 100%;
+    float: left;
+    overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+.fropicture{
+	position: relative;
+	text-align: center;
+}
+.fropicture .regimg{
+	width: 110px;
+    position: absolute;
+    top: 362px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+	cursor: pointer;
+}
+.nwlbl{
+	color: white;
+}
+.loginbtn {
+    padding: 8px;
+    color: #b59848;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 8px 0px #020202;
+    box-shadow: 0px 2px 8px 0px #020202;
+    width: 92px;
+    float: left;
+    text-align: center;
+    margin: 0 10px;
+}
+.loginbtn:hover, .loginbtn:active, .loginbtn:focus, .loginbtn:active:focus{
+	background-color: #715632;
+	transition: .5s;
+	color: white !important;
+}
+.hdrsec{
+	position: relative;
+}
+.drpnw{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 285px;
+    display: none;
+}
+
+
+/*footer start*/
+.msgimgdiv {
+    width: 100%;
+    float: left;
+}
+.msgimgdiv img {
+    width: 45px;
+    padding-top: 5px;
+}
+.copyrighttext{
+    text-align: center;
+}
+.copyrighttext p{
+   margin: 0;
+    line-height: 4.3;
+}
+footer {
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    left: 0;
+    padding: 2px 0px 0 0 !important;
+    width: 100%;
+    border-top: 2px solid #b59848;
+    border-bottom: 2px solid #b59848;
+}
+.social-icondiv{
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+.social-icondiv ul li{
+    display: inline-block;
+    line-height: 4;
+
+}
+.social-icondiv ul{
+    padding: 0;
+    margin: 0;
+}
+
+img.ng-untouched.ng-pristine.ng-valid {
+    width: 100%;
+}
+video {
+    width: 100% !important;
+}
+/*footer end*/
+
+
+
+
+/*responsive css start*/
+@media only screen and (max-width: 1200px) and (min-width: 320px){
+	.logoimg img{
+		width: 100%;
+    }
+    .hdrsec{
+        background-position-x: -20px;
+    }
+}
+@media only screen and (min-width : 1908px) and (max-width:2652px) {
+    .tooltip12:hover .tooltiptext {
+    visibility: visible;
+    display: block;
+    margin-top: 75px;
+    }
+
+
+    .checkmark {
+    height: 26px !important;
+    width: 26px !important;
+    top: 11px !important;
+    }
+    .container56 .checkmark:after {
+    left: 8px !important;
+    top: 3px !important;}
+ }
+ 
+@media only screen and (max-width: 1301px) and (min-width: 1151px){
+	.logoimg img{
+		width: 85%;
+    }
+    .hdrsec{
+        background-position-x: 0;
+    }
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.logimg{
+		text-align: center;
+		padding: 10px 0;
+	}
+	.loginform-outerdiv {
+    margin: 0 0 40px;
+	}
+	.ezeelogintext p {
+		width: 100%;
+		margin: 0;
+		padding: 8px 0;
+		margin-bottom: 0px;
+		font-size: 18px;
+	}
+	.ezeelogintext img {
+        width: 43px;
+        top: -5px;
+	}
+	.formdiv form {
+		width: 100%;
+		padding: 0;
+	}
+	.formdiv .form-group p {
+		text-align: center;
+		font-size: 13px;
+	}
+	.formdiv .signbtn{
+		width: 100%;
+        margin: 10px 0;
+        font-size: 16px;
+	}
+	.socialbtns {
+		padding: 0
+	}
+	.formdiv {
+		padding-bottom: 0px;
+	}
+	.msgimgdiv {
+		text-align: center;
+	}
+	.copyrighttext p{
+		line-height: 1.5;
+	}
+	.social-icondiv ul li img {
+		width: 40px;
+	}
+	.social-icondiv {
+		text-align: center;
+	}
+	.drpnw{
+		display: none;
+	}
+	.capimg {
+		height: 150px;
+	}
+	.fropicture .regimg{
+		width: 79px;
+		top: 144px;
+    }
+    .logimg img {
+        width: 175px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+	.ezeelogintext p {
+		width: 100%;
+		margin-bottom: 20px;
+		margin: 0;
+	}
+	.socialbtns{
+		padding: 0;
+	}
+	.social-icondiv ul li img {
+		width: 30px;
+	}
+	.formdiv{
+		padding-bottom: 0px;
+	}
+	.drpnw {
+		top: inherit;
+        width: 226px;
+        display: none;
+	}
+	.loginbtn{
+		width: 78px;
+		margin: 0 10px;
+	}
+	.capimg {
+		height: 225px;
+	}
+	.fropicture .regimg{
+	width: 100px;
+	top: 220px;
+    }
+    .signdiv button{
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 992px){
+	.socialbtns{
+		padding: 0;
+	}
+	.social-icondiv ul li img {
+		width: 30px;
+	}  
+	.capimg {
+		height: 225px;
+	}
+	.fropicture .regimg{
+	width: 100px;
+	top: 222px;
+	}
+}
+/*responsive css end*/
+
+
+.tooltip12 {
+    /*position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;*/
+}
+
+.tooltip12 .tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    /*background-color: black;*/
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -86px;
+    top: 46px !important;
+}
+
+.tooltip12:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* internal css */
+.tooltip-inner {
+      width: 125px;
+      background:#b59848;
+      padding:5px 5px 5px 5px;
+      font-size:14px;
+      font-weight:bolder;
+      height:auto;
+    }
+    
+.largefilep {
+  position:fixed;
+  width:100%;
+  opacity:0.6;
+  filter:alpha(opacity=60);
+  top:0px;
+  min-height:200px;
+  height:100%;
+  z-index:9999999999;
+  background:#2c846d;
+  font-size:20px;
+  text-align:center;
+  display:none;
+} 
+
+.encryptfilep {
+  position:fixed;
+  width:100%;
+  opacity:0.6;
+  filter:alpha(opacity=60);
+  top:0px;
+  min-height:200px;
+  height:100%;
+  z-index:9999999999;
+  background:#5b4f71;
+  font-size:20px;
+  text-align:center;
+  display:none;
+} 
+
+.digitalfilep {
+  position:fixed;
+  width:100%;
+  opacity:0.6;
+  filter:alpha(opacity=60);
+  top:0px;
+  min-height:200px;
+  height:100%;
+  z-index:9999999999;
+  background:#96450e;
+  font-size:20px;
+  text-align:center;
+  display:none;
+}
+
+/*.carousel-inner {
+  height: 315px;
+}	*/
+.dropdown-menu {
+    left: 25%;
+  min-width: 100px;
+  margin-top:0%;
+  
+}	
+.caret {
+
+  color: #b49948;
+} 
+
+@media screen and (min-width: 1920px)
+{
+.latest-trend-box a img {
+  width: 195px;
+ 
+}
+}
+
+@media screen and (max-width: 699px) {
+  .hide_mob {
+      display: none;
+
+  }
+  
+}
+
+@media screen and (min-width: 699px) {
+  .lm {
+      display: none;
+      
+  }
+  
+}
+
+.newrecap{
+    margin: 20px 0 0 !important;
+}
+
+/* The container */
+.container56 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container56 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 1px solid #6a4916;
+    }
+
+/* On mouse-over, add a grey background color */
+.container56:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container56 input:checked ~ .checkmark {
+    background-color: #715732;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container56 input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container56 .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* pulse button css start */
+
+.pulse-button {
+    position: relative;
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  }
+  .pulse-button:hover 
+  {
+    -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+  }
+  
+  @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+  /* pulse button css end */
+
+
+
+  /* beating button css start */
+
+  @keyframes pulse_animation {
+    0% { transform: scale(1); }
+    30% { transform: scale(1); }
+    40% { transform: scale(1.08); }
+    50% { transform: scale(1); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.05); }
+    80% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+.pulse {
+    animation-name: pulse_animation;
+    animation-duration: 5000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /*border: 4px solid #b59848 !important;*/
+}
+  /* beating button css end */
+
+
+
+
+
+  

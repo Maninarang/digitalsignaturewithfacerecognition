@@ -1,0 +1,9 @@
+{
+  "/api": {
+   
+    "target": "https://mybitrade.com:3001",
+    
+    
+    "secure": false
+  }
+}

@@ -1,0 +1,127 @@
+
+.logimg{
+    text-align: center;
+    padding: 130px 20px;
+}
+.logimg img{
+    width: 200px;
+}
+.img_o , .vid_o{ width:50%; float: left;}
+
+
+.person_img, .vid_o video{
+    width: 95%;
+    margin: 5px;
+    display: block;
+}
+.completed_box img {
+    width: 19px;
+    margin: 0 auto;
+    display: block;
+}
+
+.jsttext{
+    text-align: center;
+    width: 100%;
+    color: white;
+    float: left;
+    margin-bottom: 16px;
+}
+.socialbtns{
+    width: 100%;
+    float: left;
+    padding: 0 160px;
+}
+.socialbtns a{
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    padding: 6px;
+    font-size: 17px;
+}
+.socialbtns .fbbtn a{
+    background-color: #3b5999;
+}
+.socialbtns .googlebtn a{
+    background-color: #de4b39;
+}
+.socialbtns .fbbtn a:hover, .socialbtns .fbbtn a:active, .socialbtns .fbbtn a:focus {
+    background-color: #304a82;
+}
+.socialbtns .googlebtn a:hover, .socialbtns .googlebtn a:focus, .socialbtns .googlebtn a:active {
+    background-color: #c53c2b;
+}
+
+.hdrsec{
+	position: relative;
+}
+.drpnw{
+    position: absolute;
+    /* top: 30px; */
+    right: 0;
+    width: 285px;
+}
+/*header end*/
+
+
+/*footer start*/
+.msgimgdiv {
+    width: 100%;
+    float: left;
+}
+.msgimgdiv img {
+    width: 45px;
+    padding-top: 5px;
+}
+.copyrighttext{
+    text-align: center;
+}
+.copyrighttext p{
+   margin: 0;
+    line-height: 4.3;
+}
+footer {
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    left: 0;
+    padding: 2px 0px 0 0 !important;
+    width: 100%;
+    border-top: 2px solid #b59848;
+    border-bottom: 2px solid #b59848;
+    float: left;
+    position: fixed; bottom:0; z-index: 99;
+}
+.social-icondiv{
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+.social-icondiv ul li{
+    display: inline-block;
+    line-height: 4;
+
+}
+.social-icondiv ul{
+    padding: 0;
+    margin: 0;
+}
+
+
+.search-btn {
+    background: #7a6220;
+    padding: 10px 40px;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+}
+
+.box3 {
+    background: #a68734 !important;
+}
+
+.boxtab {
+    margin-top: 2% !important;
+}

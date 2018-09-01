@@ -1,0 +1,287 @@
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/signature.css">
+<!-- <link rel="stylesheet" href="assets/css/mycustom.css">  -->
+
+<section class="hdrsec">
+    <div class="logoimg">
+        <!-- <img src="../../assets/img/ezee-logo.png" /> -->
+      <a routerLink='/landing'><img src="../../assets/img/ezee-logo.png"/></a>
+        
+    </div>
+</section>
+
+
+
+<section class="fullpage">
+    <div class="my-container">
+        <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px',fullScreenBackdrop: true }"></ngx-loading>
+
+    </div>
+    <div class="container">
+        <div class="boxdiv">
+            <div class="col-md-4 col-sm-5 col-xs-12">
+                <div class="electronicsig-div">
+                    <img src="../../assets/img/elec.png" />
+                </div>
+                <div class="electronicsig-div1">
+                    <h5>SELECT PARTCIPANT</h5>
+                    <div class="radiobtnbox">
+                        <!-- {{userlist}} -->
+                        <!-- <input type="radio" name ="r"ng-model="myVar" value="dogs" (change)='newValue(value)' >
+                            <input type="radio" name ="r" ng-model="myVar" value="dogsssz" (change)='newValue(value)' >
+                            <input type="radio" ng-model="myVar" value="dogss" (change)='newValue(value)' > -->
+                        <div class="electronicsig-div1" #u>
+                            <ul class="participentul">
+                                <li *ngFor="let user of userlist">
+                                        <label class="container345">{{user.firstName}} {{user.lastName}}
+                                                <input type="radio" name="r" ng-model="myVar" value={{user._id}} (change)='userselection(user._id)'> 
+                                                <span class="checkmark"></span>
+                                        </label>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <select class="electronicsig-div1" #u (change)="userselection(u.value)">
+                                    <option value="">Select User</option>
+                                    <option *ngFor="let user of userlist" value= {{user._id}}>
+                                      {{user.firstName}} {{user.lastName}}
+                                    </option>
+                            </select> -->
+
+                    </div>
+                </div>
+                <div class="electronicsig-div2">
+                    <h5>DRAG & DROP</h5>
+                    <div>
+
+                    </div>
+                    <div *ngIf='!selected'>
+                        Please Select User First
+                    </div>
+                    <div *ngIf='selected' class="radiobtnbox1">
+                        <form>
+                            <!-- <div class="col-md-12 col-sm-12 col-xs-12 pd0 draggable">
+                                <div class="hdgtop">
+                                    <h6>Signature</h6>
+                                </div>
+                            </div> -->
+                            <div class="col-md-12 col-sm-12 col-xs-12 pd0 draggable">
+                                <div class="form-group">
+                                    <h6>Signature</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 pd0 draggable">
+                                <div class="form-group">
+                                    <h6>Initial</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 pd0 draggable">
+                                <div class="form-group">
+                                    <h6>Name</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 pd0 draggable">
+                                <div class="form-group">
+                                    <h6>Email</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 pd0 draggable">
+                                <div class="form-group">
+                                    <h6>Date</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 pd0 draggable">
+                                <div class="form-group">
+                                    <h6>Text</h6>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="electronicsig-div2">
+                    <div class="btndiv">
+                        <div class="col-md-6 col-sm-6 col-xs-12 pd0">
+                            <div class="btn1">
+                                <a routerLink="/digital_sign">
+                                    <button>
+
+                                        <i class="fa fa-angle-left" aria-hidden="true"></i> Back</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 pd0">
+                            <div class="btn2">
+                                <a style="cursor: pointer;" class="mobilehomebtn1" (click)="showinstructions = !showinstructions" data-placement="right">
+
+                                    <button>Instructions</button>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <li style="list-style:none; cursor:pointer;" class="toggle">
+
+
+                            <!-- <span class="title2">INSTRUCTIONS</span> -->
+
+
+                            <ul *ngIf="showinstructions" class="drop-popup mydroppopup">
+
+                                <div class="arrow-top">
+                                    <img src="../../assets/img/arrow-top.png">
+                                </div>
+
+                                <div class="inst-popup instnew" style="font-family: Century Gothic; font-size: 14px; text-align: left; font-weight: bold; color: #333;">
+
+                                    <ul style="list-style: none; padding: 0;">
+
+                                        <li style="margin-bottom: 10px;">Step 1: Upload or drag and drop PDF file.</li>
+
+                                        <li style="margin-bottom: 10px;">Step 2: Check box, if you require an expiration date (not mandatory).</li>
+
+                                        <li style="margin-bottom: 10px;">Step 3: Add participants.</li>
+
+                                        <li style="margin-bottom: 10px;">Step 4: You can rearrange signing order under "priority". Click on arrow up or down
+                                            to change signing order (not mandatory). Click next to complete.</li>
+
+
+                                    </ul>
+
+                                </div>
+
+                            </ul>
+
+                        </li>
+
+                    </div>
+                    <div class="btndiv">
+                        <div class="col-md-6 col-sm-6 col-xs-12 pd0">
+                            <div class="btn3">
+                                <button (click)="savehtml();">
+                                    <i class="fa fa-floppy-o" aria-hidden="true"></i> Save File</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 pd0">
+                            <div class="btn2">
+                                <button>
+                                    <i class="fa fa-times-circle" aria-hidden="true"></i> Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="gethtml">
+                <div class="col-md-8 col-sm-6 col-xs-12 divsize">
+                    <div class="pdf-div">
+
+                    </div>
+
+                    <div>
+                        <div *ngFor="let image of pdfimages;let i= index" attr.id="image{{i}}" class="pdfimg droppable">
+
+                            <img src="{{image}}">
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- <div class="col-md-8 col-sm-6 col-xs-12">
+                <div class="gethtml divsize">
+                <div class="pdf-div">
+
+                </div>
+      
+                <div >
+                    <div *ngFor="let image of pdfimages;let i= index" attr.id="image{{i}}" class="pdfimg droppable" >
+
+                        <img src="{{image}}"> 
+
+                    </div>
+
+                </div>
+                                
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+    <div style='display:none' class="stickit thefixeddiv" id="stickit">
+        <div class="col-md-12">
+            <span class="col-md-6 col-sm-12 col-xs-12" style="color:#0000;font-family: 'Century Gothic' !important;">Click Complete, to Send the Document.
+                <!--Textboxes will be added here -->
+            </span>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div style="width: 40% !important;" class="right_btn_pannel">
+                    <a class="finish btn " (click)='senddocument();' style="border-radius:0px; background-color:#6DD217 !important;border:none !important;"
+                        id="finish">SEND</a>
+                    <a (click)='hideme()' id="hideme">
+                        <i class="fa fa-times-circle"></i>Hide</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="col-md-2 col-sm-2 col-xs-12">
+            <div class="msgimgdiv">
+                <img src="../../assets/img/chat.png" />
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="copyrighttext">
+                <p>COPYRIGHT &copy; 2018.ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="social-icondiv">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/insta.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/fb.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/twitter.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/google-plus.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/you.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/test.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

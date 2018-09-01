@@ -1,0 +1,925 @@
+/* internal css starts */
+
+
+/* .hdrsec {
+    background-image: url(../../assets/img/header-bg1.png) !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+} */
+
+
+
+
+.logoimg {
+    text-align: center;
+}
+
+.left[_ngcontent-c0] {
+    margin-left: 0px !important;
+}
+
+.backdrop {
+    height: 1000px !important;
+}
+
+.tooltip-inner {
+    width: 125px;
+    background: #b59848;
+    padding: 5px 5px 5px 5px;
+    font-size: 14px;
+    font-weight: bolder;
+    height: auto;
+}
+
+.largefilep {
+    position: fixed;
+    width: 100%;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    top: 0px;
+    min-height: 200px;
+    height: 100%;
+    z-index: 9999999999;
+    background: #2c846d;
+    font-size: 20px;
+    text-align: center;
+    display: none;
+}
+
+.encryptfilep {
+    position: fixed;
+    width: 100%;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    top: 0px;
+    min-height: 200px;
+    height: 100%;
+    z-index: 9999999999;
+    background: #5b4f71;
+    font-size: 20px;
+    text-align: center;
+    display: none;
+}
+
+.digitalfilep {
+    position: fixed;
+    width: 100%;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    top: 0px;
+    min-height: 200px;
+    height: 100%;
+    z-index: 9999999999;
+    background: #96450e;
+    font-size: 20px;
+    text-align: center;
+    display: none;
+}
+
+
+.dropdown-menu {
+    left: 25%;
+  min-width: 100px;
+  margin-top:0%;
+  
+}
+  .drop-zone img{
+  width: 100%;
+}
+
+.caret {
+
+    color: #b49948;
+}
+
+@media screen and (min-width: 1920px) {
+    .latest-trend-box a img {
+        width: 195px;
+
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .hide_mob {
+        display: none;
+
+    }
+
+}
+
+@media screen and (min-width: 699px) {
+    .lm {
+        display: none;
+
+    }
+
+}
+/* internal css ends */
+
+.stickit {
+    width: 100%;
+   /* // position: fixed; */
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    border-top: 1px solid #cecece;
+    line-height: 40px;
+    background: #ccc;
+    text-align: center;
+    bottom: 0;
+    padding: 7px 24px;
+}
+.loginform-outerdiv{
+    width: 100%;
+    float: left;
+    background-color: #4299f8;
+    margin: 100px 0;
+    padding: 20px;
+}
+.logimg{
+    text-align: center;
+    padding: 230px 20px;
+}
+.logimg img{
+    width: 46%;
+}
+.log-reg-btn{
+    width: 100%;
+    float: left;
+}
+.log-reg-btn button{
+    width: 50%;
+    float: left;
+    padding: 8px;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0px 2px 1px 0px #715732;
+}
+.log-reg-btn .reg{
+    background-color: #b59848;
+    color: #715732;
+    margin-bottom: 15px;
+}
+.log-reg-btn .log{
+    background-color: #715732;
+    color: white;
+    margin-bottom: 15px;
+}
+.log-reg-btn .reg:hover{
+    background-color: #a2873b;
+}
+.log-reg-btn .log:hover{
+    background-color: #614928;
+}
+.formdiv{
+    width: 100%;
+    float: left;
+    border: 1px solid #fff;
+    padding-bottom: 60px;
+}
+.ezeelogintext{
+    width: 100%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+.ezeelogintext img{
+    width: 84px;
+}
+.ezeelogintext p{
+    width: 80%;
+    float: left;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 29px;
+    color: white;
+    margin: 0px 61px;
+    padding: 17px 0;
+
+}
+.formdiv .form-group input{
+    border: 1px solid #b59748;
+    position: relative;
+    color: #b59748;
+}
+.formdiv .form-group span{
+    position: absolute;
+    right: 26px;
+    color: #715732;
+    top: 6px;
+}
+.formdiv .form-group p{
+   text-align: right;
+    color: white;
+}
+.formdiv .form-group p a{
+    color: #92c7ff;
+}
+.formdiv .form-group p a:hover{
+    color: #715632;
+}
+.formdiv .checkbox{
+    color: white;
+    margin: 0;
+}
+.formdiv form{
+    width: 100%;
+    float: left;
+    padding: 0 40px;
+}
+.formdiv .signbtn {
+    width: 290px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #715632;
+    border: none;
+    box-shadow: 0px 0px 9px 0px #333;
+    border-radius: 2px;
+    margin: 20px 0;
+}
+.formdiv .signdiv{
+    text-align: center;
+}
+.formdiv .signbtn:hover, .formdiv .signbtn:active, .formdiv .signbtn:focus, .formdiv .signbtn:active:focus{
+    box-shadow: none;
+    transition: 0.5s;
+}
+.formdiv .signbtn img{
+    width: 35px;
+}
+
+
+.capimg{
+    width: 100%;
+    float: left;  
+    height: 250px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+.capimg img{
+    width: 100%;
+    float: left;
+    overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+.fropicture{
+	position: relative;
+	text-align: center;
+}
+.fropicture .regimg{
+	width: 110px;
+    position: absolute;
+    top: 250px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+	cursor: pointer;
+}
+.nwlbl{
+	color: white;
+}
+.loginbtn {
+    padding: 8px;
+    color: #b59848;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 8px 0px #020202;
+    box-shadow: 0px 2px 8px 0px #020202;
+    width: 92px;
+    float: left;
+    text-align: center;
+    margin: 0 10px;
+}
+.loginbtn:hover, .loginbtn:active, .loginbtn:focus, .loginbtn:active:focus{
+	background-color: #715632;
+	transition: .5s;
+	color: white !important;
+}
+
+.drpnw{
+    position: absolute;
+    /*top: 30px;*/
+    right: 0;
+    width: 285px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer start*/
+.msgimgdiv {
+    width: 100%;
+    float: left;
+}
+.msgimgdiv img {
+    width: 45px;
+    padding-top: 5px;
+}
+.copyrighttext{
+    text-align: center;
+}
+.copyrighttext p{
+   margin: 0;
+    line-height: 4.3;
+}
+footer {
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    left: 0;
+    padding: 2px 0px 0 0 !important;
+    width: 100%;
+    border-top: 2px solid #b59848;
+    border-bottom: 2px solid #b59848;
+    float: left;
+}
+.social-icondiv{
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+.social-icondiv ul li{
+    display: inline-block;
+    line-height: 4;
+
+}
+.social-icondiv ul{
+    padding: 0;
+    margin: 0;
+}
+/*footer end*/
+
+
+.electronicsig-div{
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.electronicsig-div1{
+    width: 100%;
+    float: left;
+    text-align: center;
+    /* margin-bottom: 20px; */
+    margin-bottom: 6px;
+}
+.electronicsig-div img{
+    width: 150px;
+    /* width: 100px; */
+}
+.pdf-div{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 0 0 0 50px;
+}
+.pdf-div img{
+    width: 100%;
+}
+.boxdiv{
+    width: 100%;
+    float: left;
+    /* padding: 60px 0; */
+}
+.radiobtnbox{
+    width: 100%;
+    float: left;    
+    float: left;
+    border: 3px solid #b59848;
+    padding: 10px;
+}
+.radiobtnbox select{
+    width: 100%;
+    float: left;
+    border: 2px solid #715732;
+    padding: 8px 4px;
+    background-color: #b59848;
+    color: #715732;
+    font-weight: 600;
+    font-size: 16px;
+}
+.radiobtnbox select option {
+    background-color: #c5ac69;  
+}
+.radiobtnbox select:focus{
+    outline: none;
+}
+.radiobtnbox form{
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+.radiobtnbox form .radio {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.electronicsig-div1 h5{
+    /* font-size: 19px; */
+    font-size: 15px;
+    font-weight: 600;
+    color: #515904;
+}
+.hdgtop{
+    width: 100%;
+    float: left;
+    background-color: #515904;
+    color: white;
+    /* margin-bottom: 4px; */
+    margin-bottom: 3px;
+}
+.electronicsig-div2{
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.electronicsig-div2 h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #515904;
+}
+.radiobtnbox1{
+    width: 100%;
+    float: left;
+}
+.radiobtnbox1 .form-group{
+    margin-bottom: 3px !important;
+    padding: 0px 10px;
+    border: 2px solid #b59748;
+    text-align: left;
+}
+.radiobtnbox1 .form-group:hover, .radiobtnbox1 .form-group:focus, .radiobtnbox1 .form-group:active{
+    background-color: #515904;
+    border-color: #515904;
+    transition: .5s;
+}
+.radiobtnbox1 .form-group:hover h6, .radiobtnbox1 .form-group:focus h6, .radiobtnbox1 .form-group:active h6{
+    color: #fff;
+}
+.radiobtnbox1 .form-group h6{
+    font-size: 15px;
+    color: #464920;
+    font-weight: 600;
+    margin : 7px 0;
+}
+.pd0{
+    padding: 0 !important;
+    z-index: 999;
+}
+.btndiv{
+    width: 100%;
+    float: left;
+}
+.btndiv button {
+    background-color: #b59848;
+    width: 160px;
+    padding: 8px;
+    border: none;
+    /* margin-bottom: 30px; */
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #715732;
+}
+.btndiv button:hover, .btndiv button:active, .btndiv button:focus{
+    outline: none;  
+}
+.btndiv .btn1 {
+    text-align: left;
+    color: #715732;
+}
+.btndiv .btn2 {
+    text-align: right;
+    color: #715732;
+}
+.btndiv .btn3 {
+    text-align: left;
+}
+.btndiv .btn3 button {
+    color: #fff;
+    background-color: #715732;
+}
+[mwlDraggable] {
+    background-color: red;
+    width: 200px;
+    height: 20px;
+    position: relative;
+    z-index: 1;
+    float: left;
+    margin-right: 10px;
+  }
+  [mwlDroppable] {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+  }
+  [mwlDraggable],
+  [mwlDroppable] {
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dropOverActive {
+    border: dashed 1px black;
+    background-color: lightgreen;
+  }
+
+
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+    .hdrsec {
+        height: 100px;
+        background-position-x: -40px;
+        background-size: cover !important;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 575px) and (min-width: 320px) {
+    .btndiv button {
+        width: 100%;
+    }
+    .divsize {
+        max-height: 350px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+    .btndiv .btn1, .btndiv .btn2, .btndiv .btn3 {
+        text-align: center;
+    }
+    .electronicsig-div1, .radiobtnbox{
+        width: 100%;
+        text-align: center;
+    }
+    .radiobtnbox select{
+        width: 160px;
+        float: none;
+    }
+    .divsize {
+        max-height: 500px !important;
+    }
+    .radiobtnbox1{
+        text-align: center;
+    }
+    .radiobtnbox1 .form-group {
+        width: 200px;
+        float: none;
+        margin: 0 auto 3px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+.divsize {
+    float: none !important;
+
+}
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 320px){
+.logoimg img{
+    float: none;
+}
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    .btndiv button {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 1356px) and (min-width: 768px){
+    .divsize {
+        max-height: 770px !important;
+    }
+}
+
+@media only screen and (width:768px){
+    .btndiv button {
+        width: 130px;
+    }
+}
+
+
+
+.container345 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    /* margin-bottom: 12px; */
+    margin-bottom: 8px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 600;
+}
+
+/* Hide the browser's default radio button */
+.container345 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* height: 20px;
+    width: 20px; */
+    height: 16px;
+    width: 16px;
+    background-color: #b59748;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container345:hover input ~ .checkmark {
+    background-color: #947b38;
+}
+
+/* When the radio button is checked, add a blue background */
+.container345 input:checked ~ .checkmark {
+    background-color: #b59748;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container345 input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container345 .checkmark:after {
+    /* top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px; */
+    top: 5px;
+    left: 5px;
+    width: 6px;
+    height: 6px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+.pdfimg img{
+    width: 100%;
+}
+.pdfimg {
+    border-bottom: 2px solid #333333;
+}
+
+.divsize {
+    border: 10px solid #858f03;
+    /* max-height: 803px;
+    overflow: hidden;
+        width: auto !important;
+
+    overflow-y: scroll; */
+    float: right !important;
+    height: 100%;
+}
+
+/* .container{
+    padding-right: 0;
+    margin-right: 0;
+} */
+
+.thefixeddiv{
+    position: fixed;
+    float: left;
+}
+
+#stickit {
+    font-size: 18px;
+    text-transform: none;
+}
+.btn {
+    padding: 10px 30px !important;
+}
+
+
+
+
+
+/*responsive css start*/
+@media only screen and (max-width: 1200px) and (min-width: 320px){
+	.logoimg img{
+		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.logimg{
+		text-align: center;
+		padding: 10px 0;
+	}
+	.loginform-outerdiv {
+    margin: 0 0 40px;
+	}
+	.ezeelogintext p {
+		width: 100%;
+		margin: 0;
+		padding: 8px 0;
+		margin-bottom: 0px;
+		font-size: 18px;
+	}
+	.ezeelogintext img {
+        width: 43px;
+        top: -5px;
+	}
+	.formdiv form {
+		width: 100%;
+		padding: 0;
+	}
+	.formdiv .form-group p {
+		text-align: center;
+		font-size: 13px;
+	}
+	.formdiv .signbtn{
+		width: 100%;
+		margin: 10px 0;
+	}
+	.socialbtns {
+		padding: 0
+	}
+	.formdiv {
+		padding-bottom: 0px;
+	}
+	.msgimgdiv {
+		text-align: center;
+	}
+	.copyrighttext p{
+		line-height: 1.5;
+	}
+	.social-icondiv ul li img {
+		width: 40px;
+	}
+	.social-icondiv {
+		text-align: center;
+	}
+	.drpnw{
+		display: none;
+	}
+	.capimg {
+		height: 150px;
+	}
+	.fropicture .regimg{
+		width: 79px;
+		top: 144px;
+    }
+    .logimg img {
+        width: 175px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+	.ezeelogintext p {
+		width: 100%;
+		margin-bottom: 20px;
+		margin: 0;
+	}
+	.socialbtns{
+		padding: 0;
+	}
+	.social-icondiv ul li img {
+		width: 30px;
+	}
+	.formdiv{
+		padding-bottom: 0px;
+	}
+	.drpnw {
+		top: 23px;
+		width: 226px;
+	}
+	.loginbtn{
+		width: 78px;
+		margin: 0 10px;
+	}
+	.capimg {
+		height: 225px;
+	}
+	.fropicture .regimg{
+	width: 100px;
+	top: 220px;
+	}
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 992px){
+	.socialbtns{
+		padding: 0;
+	}
+	.social-icondiv ul li img {
+		width: 30px;
+	}  
+	.capimg {
+		height: 225px;
+	}
+	.fropicture .regimg{
+        width: 100px;
+        top: 222px;
+    }
+    
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+    .mydroppopup{
+        padding: 0 8px;
+        width: 198px;
+        float: right;
+        margin-bottom: 20px;
+        margin-left: -41px;  
+    }
+}
+
+@media only screen and (max-width: 1649px) and (min-width: 1200px){
+    .mydroppopup{
+        padding: 0 8px;
+        width: 226px;
+        float: right;
+        margin-bottom: 20px;
+        margin-left: -41px;  
+    }
+}
+
+@media only screen and (max-width: 2496px) and (min-width: 1650px){
+    .mydroppopup{
+        padding: 0 8px;
+        width: 226PX;
+        float: right;
+        margin-bottom: 20px;
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (width:1024px){
+    .hdrsec {
+        background-size: 100%;
+    }
+}
+@media only screen and (width:768px){
+    .logoimg {
+        padding: 20px 0;
+    }
+}
+
+.fullpage{
+    width: 100%;
+    float: left;
+    
+}
+
+/* left: 92px;
+top: 131.141px; // tobe
+
+
+
+left: 410px;
+top: 320.141px; //apni */
+
+
+.participentul{
+    padding: 0;
+    text-align: left;
+}
+.participentul li{
+    display: inline-block;
+    width: 50%;
+    float: left;
+}

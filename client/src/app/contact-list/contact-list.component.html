@@ -1,0 +1,497 @@
+<!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+
+<!-- <link rel="stylesheet" href="assets/css/mycustom.css">  -->
+<style>
+  .tooltip-inner {
+    width: 125px;
+    background:#b59848;
+    padding:5px 5px 5px 5px;
+    font-size:14px;
+    font-weight:bolder;
+height:auto;
+  }
+
+.largefilep {
+position:fixed;
+width:100%;
+opacity:0.6;
+filter:alpha(opacity=60);
+top:0px;
+min-height:200px;
+height:100%;
+z-index:9999999999;
+background:#2c846d;
+font-size:20px;
+text-align:center;
+display:none;
+} 
+
+.encryptfilep {
+position:fixed;
+width:100%;
+opacity:0.6;
+filter:alpha(opacity=60);
+top:0px;
+min-height:200px;
+height:100%;
+z-index:9999999999;
+background:#5b4f71;
+font-size:20px;
+text-align:center;
+display:none;
+} 
+
+.digitalfilep {
+position:fixed;
+width:100%;
+opacity:0.6;
+filter:alpha(opacity=60);
+top:0px;
+min-height:200px;
+height:100%;
+z-index:9999999999;
+background:#96450e;
+font-size:20px;
+text-align:center;
+display:none;
+}
+
+.dropdown-menu {
+    left: 25%;
+  min-width: 100px;
+  margin-top:0%;
+  
+}
+.caret {
+
+  color: #b49948;
+} 
+
+@media screen and (min-width: 1920px)
+{
+.latest-trend-box a img {
+  width: 195px;
+ 
+}
+}
+
+@media screen and (max-width: 699px) {
+  .hide_mob {
+      display: none;
+
+  }
+  
+}
+
+@media screen and (min-width: 699px) {
+  .lm {
+      display: none;
+      
+  }
+  
+}
+
+</style>
+
+
+
+
+
+<section class="hdrsec">
+  <div class="logoimg">
+    <a routerLink='/landing'><img src="../../assets/img/ezee-logo.png"/></a>
+    <!-- <img src="../../assets/img/ezee-logo.png" /> -->
+  </div>
+
+
+  <div class="drp drpnw">
+            
+      <div class="col-lg-12 col-md-12  col-xs-12">
+         
+         <div class="hide_mob"><a href='/register'>
+              
+              <div class="list-part-home loginbtn">SIGN UP
+
+              </div></a>
+              
+              <a href='/login'>	<div class='list-part-home loginbtn' style="padding: 8px;color: #b59848;">LOG IN 
+              
+              </div></a>
+           </div>
+          
+          <div class="list-part-home lm" style="margin-right: 70px !important;">
+             
+             <li class='dropdown'>
+           
+              <a class='dropdown-toggle' data-toggle='dropdown' aria-expanded='false'><span class='title'> <i class="fa fa-bars"></i>&nbsp;&nbsp;</span></a>
+             
+             <ul class='dropdown-menu'>
+             
+                 <li><a href='/login'>LOG IN</a></li>
+             
+                 <li><a href='/regiser'>SIGN UP</a></li>
+
+             </ul>
+             
+             </li>
+          
+          </div>
+        </div> 
+    </div>
+
+</section>
+
+
+<div class="container">
+                  
+  <div class="list-part">
+
+            <li class="dropdown">
+         
+   <a style="cursor: pointer;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      
+  <i class="fa fa-user list5" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+         
+    <span class="title">Tarun &nbsp;&nbsp;<b class="caret"></b></span>
+          </a>
+
+              <ul class="dropdown-menu">
+                
+    <li><a href="#">Logout</a></li>
+               
+     <li><a href="#">View Profile</a></li>
+              
+     <li id=""><a href="#">Change Password</a></li>
+           
+     <li><a href="#">Membership Order</a></li>
+  
+              </ul>
+
+           </li>
+     
+</div>
+
+  </div>
+
+
+
+
+<script language="javascript">
+  $(document).ready(function() {
+      $("#changepass").click(function() {
+          $("#shadow").fadeIn("normal"), $("#changepasswordform").fadeIn("normal")
+      }), $("#cancel_hide").click(function() {
+          $("#changepasswordform").fadeOut("normal"), $("#shadow").fadeOut("normal")
+      }), $(".closepar").click(function() {
+          $("#changepasswordss")[0].reset(), $("#changepasswordform").fadeOut("normal"), $("#error_password").html(""), $("#shadow").fadeOut("normal")
+      })
+  });
+  </script>
+
+
+
+  <div class="container middlemargin">
+  
+    <div class="row">
+    
+      <div class="col-lg-2 col-md-2 col-xs-12">
+         
+         <!--Instructions & logo part start-->		
+             
+         <div style="display:block; margin:0 auto;" class="col-lg-12"> 
+             
+           <a href="#" data-placement="right" data-toggle="tooltip" data-original-title=""><p class="pt51 pt567">&nbsp;&nbsp;<span class="fa fa-home"></span> &nbsp;Home</p></a>
+            
+          </div>	
+               
+           <a href="digital_signature.html">
+               
+             <img class="img-responsive img-portfolio2" src="../../assets/img/signature.png" style="margin-top:10%;" alt="" data-placement="right"> 
+               
+           </a>
+  
+  
+  
+   <script type="text/javascript">
+    $(function() {
+    $('#showhide').click(function() {
+    $("#slidediv").slideToggle();
+    });
+    });
+    </script>
+    
+    <style type="text/css">.arrow-top { top: -1px;}</style>
+     
+     <div class="wrapper2">
+    
+    <li style="list-style:none; cursor:pointer;" class="toggle">
+       
+       <a style="cursor: pointer;" class="list-part2" id="showhide" data-placement="right">
+    
+        <span class="title2">INSTRUCTIONS</span>
+       
+       </a>
+        
+      <ul style="display:none;" class="drop-popup" id="slidediv">
+         
+         <div class="arrow-top"><img src="../../assets/img/arrow-top.png"></div>
+          
+         <div class="inst-popup" style="font-family: Century Gothic; font-size: 14px; text-align: left; font-weight: bold; color: #333;">
+         
+         <ul style="list-style: none; padding: 0;">
+         
+             <li style="margin-bottom: 10px;">Step 1:  Upload or drag and drop PDF file.</li>
+         
+             <li style="margin-bottom: 10px;">Step 2:  Check box, if you require an expiration date (not mandatory).</li>
+             
+           <li style="margin-bottom: 10px;">Step 3:  Add participants.</li>
+             
+           <li style="margin-bottom: 10px;">Step 4:  You can rearrange signing order under "priority". Click on arrow up or down to change signing order (not mandatory). Click next to complete.</li>
+      
+      
+         </ul>
+    
+        </div>
+      
+      </ul>
+      
+      </li>
+    
+    </div>
+  
+  
+      <div class="clearfix"></div>	    <!--Instructions & logo part end-->
+      
+    </div>
+    
+    <div class="col-lg-10 col-md-10 col-xs-12">
+       
+         <div class="inner-part8" style="box-shadow:none !important;">
+        
+             <div class="col-lg-12">
+                  
+          <div class="col-lg-12">
+                   
+           <p class="pt10 encryption">e-signature</p>
+                  </div>
+   </div>           
+         
+      <div class="col-lg-12">
+           
+       <div class="tabs-left">
+  
+  <style type="text/css">
+  .active span.pt6
+  {
+      color:#fff !important;
+  }
+  </style>
+   
+   <!-- <ul class="nav nav-tabs6">
+     
+     <li class=""><a href="digital_signature.html"><span class="fa fa-file-pdf-o"></span>&nbsp;&nbsp;<span class="pt6">Compose</span></a></li>
+     
+     <li><a href="action_req.html"><span class="fa fa-ban"></span>&nbsp;&nbsp;<span class="pt6">Action Required</span></a></li>
+   
+    <li class=""><a href="completed.html"><span class="fa fa-check"></span>&nbsp;&nbsp;<span class="pt6">Completed</span></a></li>
+   
+    <li class="active"><a href="contactlist.html"><span class="fa fa-users"></span>&nbsp;&nbsp;<span class="pt6">Contact</span></a></li>
+   
+   </ul>             -->
+   <ul class="nav nav-tabs6">
+     
+        <li class=""><a routerLink=""><span class="fa fa-file-pdf-o"></span>&nbsp;&nbsp;<span class="pt6">Compose</span></a></li>
+        
+        <li class="active"><a routerLink="actionrequired"><span class="fa fa-ban"></span>&nbsp;&nbsp;<span class="pt6">Action Required</span></a></li>
+      
+       <li class=""><a routerLink=""><span class="fa fa-check"></span>&nbsp;&nbsp;<span class="pt6">Completed</span></a></li>
+      
+       <li class=""><a routerLink=""><span class="fa fa-users"></span>&nbsp;&nbsp;<span class="pt6">Contact</span></a></li>
+      
+      </ul>  
+       
+   <div id="myTabContent" class="tab-content">
+       
+    <div class="tab-pane1 active" id="home">
+          
+      <div class="col-lg-12 col-md-12 col-xs-12">
+               
+       
+               
+       
+               <div class="table-responsive">
+       
+         
+       
+       
+       
+                <!-- <form id="mailform" method="post" action="#">-->
+             <div id="loader-icon" style="display:none;"><img src="./contactlist_files/loadingnew.gif"></div>
+              
+            <table class="table table-bordered table-hover table-striped" id="hor-zebra1">
+                     
+           <thead>
+                     
+           <tr style="list3" class="digital">
+             
+            <th>
+                             
+             <input type="checkbox" name="check_all" id="" onclick="">
+                       
+           </th>
+                       
+           <th style="width:20%;">First Name <a href="#"><img class="placement76" src="./contactlist_files/arrow_up.png" border="0" width="14" height="14"></a></th>
+                       
+           <th style="width:21%;">Last Name <a href="#"><img class="placement76" src="./contactlist_files/arrow_up.png" border="0" width="14" height="14"></a></th>
+                       
+           <th style="width:24%;">E-mail <a href="#"><img class="placement76" src="./contactlist_files/arrow_up.png" border="0" width="14" height="14"></a></th>
+           
+           <th style="width:30%;">Address</th>
+                       
+           <th style="width:15%;">Edit/Save</th>
+                     
+           </tr>
+                   
+         </thead>
+                   
+         <tbody>
+                    
+                     <tr>
+           
+           <!-- <form name="reg" id="" class="contactform" method="POST" action="" onsubmit="return send_mail(&#39;1&#39;);"></form>
+          
+                         <input type="hidden" class="form-control" id="" name="fromem" value="tarunsharmaait@gmail.com">
+                         
+             <input type="hidden" class="form-control" id="" name="custemail" value="tarunsharmaait@gmail.com"> -->
+           
+           <td><label>
+                             
+               <input type="checkbox" class="ckb" name="id[]" value="tarunsharmaait@gmail.com">
+                           
+             </label></td>
+                       
+           <td><input type="search" style="b" class="form-control input-sm" placeholder="" id="" name="fname" value="dfghfdhhfd" aria-controls="dataTables-example" onkeypress="removeErrors(&quot;error_fname1&quot;)">
+           
+           <span class="error" id="error_fname1" style="font-size:10px;"></span>
+           
+           </td>
+                       
+           <td><input type="search" class="form-control input-sm" placeholder="" id="" name="lname" value="bnm" aria-controls="dataTables-example" onkeypress="removeErrors(&quot;error_fname1&quot;)">
+           
+           <span class="error" id="error_lname1" style="font-size:10px;"></span>
+           
+           </td>
+                       
+           <td><input type="text" class="form-control input-sm" placeholder="" id="" name="emailid" value="tarunsharmaait@gmail.com" aria-controls="dataTables-example" onkeypress="removeErrors(&quot;email_address1&quot;)">
+           
+           <span class="error" id="error_email_address1" style="font-size:10px;"></span>
+           
+           </td>
+           
+           <td><input type="search" class="form-control input-sm" placeholder="" id="" name="address" value="swderfgyhui" aria-controls="dataTables-example">
+           
+           </td>
+                      
+            <td><button type="submit" class="btn5"><img src="../../assets/img/remove.png" aria-hidden="true" data-placement="bottom" data-toggle="tooltip" data-original-title=""></button>
+            
+            </td>
+                     
+           </tr>
+                                 
+                   </tbody>
+                 
+         </table>
+         
+        <!-- </form>-->
+          <div class="col-lg-6" style="margin-top: 10px; margin-left: -3%;"> <a href="javascript:void(0)" onclick=""><img src="../../assets/img/delate-2.png" style="float:left;" class="img-responsive img2 " data-placement="top" data-toggle="tooltip" data-original-title=""></a> </div>
+             
+       </div>
+             
+       </div>
+           
+     </div></div>
+           
+     <!-- /tab-content -->
+       
+  
+
+      <div class="clearfix"></div>
+       
+     </div>
+     
+     </div>
+   
+   </div>
+  
+   </div>
+
+   <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+    </script>
+<div class="shade">
+  
+  <div class="popmsg">
+   
+   <p style="color:#FFFFFF; text-align:center;font-weight:900;font-size:16px;padding:10px 0; margin:0;" id="ses"></p>
+ 
+ </div>
+
+ </div> 
+</div>
+</div>   
+  
+
+
+<footer id="footer">
+  <div class="container">
+      <div class="col-md-2 col-sm-2 col-xs-12">
+          <div class="msgimgdiv">
+              <img src="../../assets/img/chat.png" />
+          </div>
+      </div>
+      <div class="col-md-5 col-sm-5 col-xs-12">
+          <div class="copyrighttext">
+              <p>COPYRIGHT &copy; 2018.ALL RIGHTS RESERVED</p>
+          </div>
+      </div>
+      <div class="col-md-5 col-sm-5 col-xs-12">
+          <div class="social-icondiv">
+              <ul>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/insta.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/fb.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/twitter.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/google-plus.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/you.png" />
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../../assets/img/test.png" />
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+

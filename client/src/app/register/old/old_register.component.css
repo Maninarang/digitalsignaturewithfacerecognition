@@ -1,0 +1,202 @@
+.loginform-outerdiv{
+    width: 100%;
+    float: left;
+    background-color: #659e3d;
+    margin: 100px 0;
+    padding: 20px;
+}
+.logimg{
+    text-align: center;
+    padding: 130px 20px;
+}
+.logimg img{
+    width: 200px;
+}
+.log-reg-btn{
+    width: 100%;
+    float: left;
+}
+.log-reg-btn button{
+    width: 50%;
+    float: left;
+    padding: 8px;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0px 2px 1px 0px #715732;
+}
+.log-reg-btn .reg{
+    background-color: #b59848;
+    color: #715732;
+    margin-bottom: 15px;
+}
+.log-reg-btn .log{
+    background-color: #715732;
+    color: white;
+    margin-bottom: 15px;
+}
+.log-reg-btn .reg:hover{
+    background-color: #a2873b;
+}
+.log-reg-btn .log:hover{
+    background-color: #614928;
+}
+.formdiv{
+    width: 100%;
+    float: left;
+    border: 1px solid #fff;
+    padding-bottom: 60px;
+}
+.ezeelogintext{
+    width: 100%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+.ezeelogintext img{
+    width: 84px;
+}
+.ezeelogintext p{
+    width: 80%;
+    float: left;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 29px;
+    color: white;
+    margin: 0px 61px;
+    padding: 17px 0;
+
+}
+.formdiv .form-group input{
+    border: 1px solid #b59748;
+    position: relative;
+    color: #b59748;
+}
+.formdiv .form-group span{
+    position: absolute;
+    right: 26px;
+    color: #715732;
+    top: 6px;
+}
+.formdiv .form-group p{
+   text-align: right;
+    color: white;
+}
+.formdiv .form-group p a{
+    color: #d6d5d5;
+}
+.formdiv .form-group p a:hover{
+    color: #715632;
+}
+.formdiv .checkbox{
+    color: white;
+    margin: 0;
+}
+.formdiv form{
+    width: 100%;
+    float: left;
+    padding: 0 40px;
+}
+.formdiv .signbtn {
+    width: 290px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #715632;
+    border: none;
+    box-shadow: 0px 0px 9px 0px #333;
+    border-radius: 2px;
+    margin: 20px 0;
+    text-align: center;
+}
+.formdiv .signdiv{
+    text-align: center;
+}
+.formdiv .signbtn:hover, .formdiv .signbtn:active, .formdiv .signbtn:focus, .formdiv .signbtn:active:focus{
+    box-shadow: none;
+    transition: 0.5s;
+}
+.formdiv .signbtn img{
+    width: 35px;
+}
+.jsttext{
+    text-align: center;
+    width: 100%;
+    color: white;
+    float: left;
+    margin-bottom: 16px;
+}
+.socialbtns{
+    width: 100%;
+    float: left;
+    padding: 0 160px;
+}
+.socialbtns a{
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    padding: 6px;
+    font-size: 17px;
+}
+.socialbtns .fbbtn a{
+    background-color: #3b5999;
+}
+.socialbtns .googlebtn a{
+    background-color: #de4b39;
+}
+.socialbtns .fbbtn a:hover, .socialbtns .fbbtn a:active, .socialbtns .fbbtn a:focus {
+    background-color: #304a82;
+}
+.socialbtns .googlebtn a:hover, .socialbtns .googlebtn a:focus, .socialbtns .googlebtn a:active {
+    background-color: #c53c2b;
+}
+/*footer start*/
+.msgimgdiv {
+    width: 100%;
+    float: left;
+}
+.msgimgdiv img {
+    width: 45px;
+    padding-top: 5px;
+}
+.copyrighttext{
+    text-align: center;
+}
+.copyrighttext p{
+   margin: 0;
+    line-height: 4.3;
+}
+footer {
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    left: 0;
+    padding: 2px 0px 0 0 !important;
+    width: 100%;
+    border-top: 2px solid #b59848;
+    border-bottom: 2px solid #b59848;
+}
+.social-icondiv{
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+.social-icondiv ul li{
+    display: inline-block;
+    line-height: 4;
+
+}
+.social-icondiv ul{
+    padding: 0;
+    margin: 0;
+}
+.formdiv .checkbox a{
+    color: #9eda75;
+    text-decoration: underline;
+}
+.formdiv .checkbox a:hover, .formdiv .checkbox a:focus, .formdiv .checkbox a:active {
+    color: #203e0b;
+    text-decoration: underline;
+}
+/*footer end*/

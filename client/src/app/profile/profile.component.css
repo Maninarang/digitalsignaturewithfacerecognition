@@ -1,0 +1,422 @@
+/*footer start*/
+.msgimgdiv {
+    width: 100%;
+    float: left;
+}
+.msgimgdiv img {
+    width: 45px;
+    padding-top: 5px;
+}
+.copyrighttext{
+    text-align: center;
+}
+.copyrighttext p{
+   margin: 0;
+    line-height: 4.3;
+}
+.p_f label.control-label.col-sm-2 {
+    margin: 0;
+}
+
+.dropdown-menu{
+    right: 0;
+    max-width: 166px !important;
+    margin-top: 0;
+}
+
+
+.control-label {
+    
+    color: #000 !important;}
+.h_P button.homebtn {
+    box-shadow: none !important;
+}
+.p_p button.dropdown-toggle.homebtn {
+    box-shadow: none !important;
+}
+button.btn.signbtn{  box-shadow: none !important;}
+footer {
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    left: 0;
+    padding: 2px 0px 0 0 !important;
+    width: 100%;
+    border-top: 2px solid #b59848;
+    border-bottom: 2px solid #b59848;
+}
+.social-icondiv{
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+.social-icondiv ul li{
+    display: inline-block;
+    line-height: 4;
+
+}
+.social-icondiv ul{
+    padding: 0;
+    margin: 0;
+}
+/*footer end*/
+
+
+.editprdiv{
+    width: 100%;
+    float: left;
+    padding: 30px; 
+}
+.topbtndiv{
+    width: 100%;
+    float: left;
+}
+.homebtn {
+    background-color: #715732 ;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 7px 0px #333;
+    padding: 7px 22px;
+    border-radius: 0px;
+    box-shadow: -3px 0px 5px 0px #6b6b6b;
+}
+.homebtn:hover, .homebtn:focus, .homebtn:active{
+    background-color: #8c714a !important ;
+    box-shadow: none;
+    outline: none;
+    transition: .5s;
+}
+.topbtndiv{
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+}
+.topbtndiv .dropdown{
+    text-align: right;
+}
+
+/*form start*/
+.formdiv{
+    width: 100%;
+    float: left;
+    padding: 60px 0;
+    background-color: #96c7ff;
+}
+.ezeelogintext{
+    width: 100%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+.ezeelogintext img{
+    width: 84px;
+}
+.ezeelogintext p{
+    width: 80%;
+    float: left;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 29px;
+    color: white;
+    margin: 0px 61px;
+    padding: 17px 0;
+
+}
+.formdiv .form-group input{
+    border: 1px solid #b59748;
+    position: relative;
+    color: #000;
+    background-color: #e3f0ff;
+    border-radius: 0;
+}
+.formdiv .form-group span{
+    position: absolute;
+    right: 30px;
+    color: #715732;
+    top: 4px;
+}
+.formdiv .form-group p{
+   text-align: right;
+    color: white;
+}
+.formdiv .form-group p a{
+    color: #d6d5d5;
+}
+.formdiv .form-group p a:hover{
+    color: #715632;
+}
+.formdiv .checkbox{
+    color: white;
+    margin: 0;
+}
+.formdiv form{
+    width: 100%;
+    float: left;
+    padding: 0 20px;
+}
+.formdiv .signbtn {
+    width: 170px;
+    padding: 5px 7px;
+    font-size: 18px;
+    color: white;
+    background-color: #a9882b;
+    border: none;
+    box-shadow: -3px 0px 5px 0px #6b6b6b;
+    border-radius: 0px;
+    margin: 20px 0;
+	/*background-image: linear-gradient(to bottom,#715632 0, #a7872e 100%);*/
+}
+.formdiv .signdiv{
+    text-align: right;
+}
+.formdiv .signbtn:hover, .formdiv .signbtn:active, .formdiv .signbtn:focus, .formdiv .signbtn:active:focus{
+    box-shadow: none;
+    transition: 0.5s;
+}
+.formdiv .signbtn img{
+    width: 35px;
+}
+.jsttext{
+    text-align: center;
+    width: 100%;
+    color: white;
+    float: left;
+    margin-bottom: 16px;
+}
+.socialbtns{
+    width: 100%;
+    float: left;
+    padding: 0 160px;
+}
+.socialbtns a{
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    padding: 6px;
+    font-size: 17px;
+}
+.socialbtns .fbbtn a{
+    background-color: #3b5999;
+}
+.socialbtns .googlebtn a{
+    background-color: #de4b39;
+}
+.socialbtns .fbbtn a:hover, .socialbtns .fbbtn a:active, .socialbtns .fbbtn a:focus {
+    background-color: #304a82;
+}
+.socialbtns .googlebtn a:hover, .socialbtns .googlebtn a:focus, .socialbtns .googlebtn a:active {
+    background-color: #c53c2b;
+}
+
+.boxmain {
+    width: 100%;
+    float: left;
+    background-color: #4099ff;
+    padding: 26px;
+}
+.hding{
+    text-align: right;
+    padding: 0px 0 19px;
+}
+.hding h3{
+    margin: 0;
+    color: white;
+    font-size: 18px;
+}
+.formdiv form label{
+    font-size: 12px;
+}
+.pd0{
+    padding: 0;
+}
+.pluscircle {
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-size: 10px;
+    top: 8px !important;
+    cursor: pointer;
+    position: absolute !important;
+    height: 17px;
+    width: 17px;
+    top: 9px !important;
+}
+.pluscircle i{
+    line-height: 1.2;
+    color: #000;
+    font-size: 14px;
+    left: 9%;
+    top: 0;
+}
+.pd0 .dropdown ul {
+    right: 0;
+    left: auto;
+}
+.plusdiv ul {
+    right: 38px;
+    left: auto;
+    top: 16px;
+    background-color: #e3f0ff;
+}
+
+.addvrfy {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.addinpt input {
+    height: 21px;
+    width: 140px;
+    margin: 0 12px 10px;
+    font-size: 11px;
+    padding: 4px 7px;
+    background-color: white !important;
+}
+.addbtnnn button {
+    font-size: 11px;
+    border: none;
+    background-color: #a9872b;
+    color: #fff;
+    padding: 3px 11px;
+}
+.addbtnnn button:hover, .addbtnnn button:focus, .addbtnnn button:active  {
+    background-color: #987925;
+    outline: none;
+}
+.addbtnnn{
+    text-align: center;
+}
+.plusdiv .edul{
+    padding: 14px 10px;
+    box-shadow: 0px 0px 9px 0px #ccc;
+    border: 1px solid #000;
+    border-radius: 0;
+}
+.inptdrp{
+    cursor: pointer;
+}
+.secdryul{
+    right: 33px;
+    left: auto;
+    padding: 0;
+    border-radius: 0;
+    border: 1px solid #000;
+    top: 18px;
+    background-color: #e3f0ff;
+    box-shadow: 0px 0px 9px 0px #ccc;
+}
+.secdryul li a{
+    font-size: 12px;
+    color: #000;
+    padding: 11px;
+}
+.secdryul li a:hover, .secdryul li a:active, .secdryul li a:focus{
+    background-color: #a68734 !important;
+    outline: none;
+    color: #000;
+	background: none;
+}
+.secdryul .bordrbtm {
+    border-bottom: 1px solid #000;
+}
+
+.secdryul1{
+    right: 33px;
+    left: auto;
+    padding: 0;
+    border-radius: 0;
+    border: 1px solid #000;
+    top: 36px;
+    background-color: #e3f0ff;
+    box-shadow: 0px 0px 9px 0px #383838;
+}
+.secdryul1 li a{
+    font-size: 12px;
+    color: #000;
+    padding: 11px;
+}
+.secdryul1 li a:hover, .secdryul1 li a:active, .secdryul1 li a:focus{
+    background-color: #a68734;
+    outline: none;
+    color: #000;
+}
+.secdryul1 .bordrbtm {
+    border-bottom: 1px solid #000;
+}
+.btn-default {
+    background-image: -webkit-gradient(linear,left top, left bottom,color-stop(0, #fff),to(#e0e0e0));
+    background-image: linear-gradient(to bottom,#b59748 0,#715632 100%);
+}
+/*form end*/
+
+
+/*responsive css start*/
+@media only screen and (max-width: 1200px) and (min-width: 320px){
+	.logoimg img{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.logimg{
+		text-align: center;
+		padding: 10px 0;
+	}
+	.loginform-outerdiv {
+    margin: 0 0 40px;
+	}
+	.copyrighttext p{
+		line-height: 1.5;
+	}
+	.social-icondiv ul li img {
+		width: 40px;
+	}
+	.social-icondiv {
+		text-align: center;
+	}
+	.msgimgdiv {
+		text-align: center;
+	}
+	.editprdiv{
+		padding: 0;
+	}
+	.homebtn{
+		margin-bottom: 15px;
+		width: 100%;
+
+	}
+	.hding h3 {
+		text-align: center;
+	}
+	.formdiv{
+		padding: 20px 0;
+	}
+	.formdiv .signbtn {
+		width: 100%;
+	}
+	.editprdiv{
+		margin-bottom: 25px;
+	}
+}
+
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+	.ezeelogintext p {
+		width: 100%;
+		margin-bottom: 20px;
+		margin: 0;
+	}
+	.socialbtns{
+		padding: 0;
+	}
+	.social-icondiv ul li img {
+		width: 30px;
+	}
+	.formdiv{
+		padding-bottom: 0px;
+	}
+	.formdiv form label{
+		font-size: 11px;
+	}
+}

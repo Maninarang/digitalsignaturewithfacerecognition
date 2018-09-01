@@ -1,0 +1,717 @@
+.pdfimg img{
+    width: 100%;
+}
+.pdfimg {
+    border-bottom: 2px solid #333333;
+}
+.divsize {
+    border: 3px solid #858f03;
+    /* max-height: 854px;
+    overflow: hidden;
+    overflow-y: scroll; */
+    float: right;
+    height: 100%;
+}
+
+.pdfimg[_ngcontent-c0] img[_ngcontent-c0]
+
+.webcam-wrapper video {
+    width :430px !important;
+}
+
+.video {
+    box-shadow: 1px 6px 10px 2px rgba(35, 35, 35, 0.62);
+    height: 240px;
+    width: 320px;
+  }
+
+.loginform-outerdiv{
+    width: 100%;
+    float: left;
+    background-color: #4299f8;
+    margin: 100px 0;
+    padding: 20px;
+}
+.logimg{
+    text-align: center;
+    padding: 230px 20px;
+}
+.logimg img{
+    width: 46%;
+}
+.log-reg-btn{
+    width: 100%;
+    float: left;
+}
+.log-reg-btn button{
+    width: 50%;
+    float: left;
+    padding: 8px;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0px 2px 1px 0px #715732;
+}
+.log-reg-btn .reg{
+    background-color: #b59848;
+    color: #715732;
+    margin-bottom: 15px;
+}
+.log-reg-btn .log{
+    background-color: #715732;
+    color: white;
+    margin-bottom: 15px;
+}
+.log-reg-btn .reg:hover{
+    background-color: #a2873b;
+}
+.log-reg-btn .log:hover{
+    background-color: #614928;
+}
+.formdiv{
+    width: 100%;
+    float: left;
+    /* border: 1px solid #fff; */
+    /* padding-bottom: 60px; */
+}
+.ezeelogintext{
+    width: 100%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+.ezeelogintext img{
+    width: 84px;
+}
+.ezeelogintext p{
+    width: 80%;
+    float: left;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 29px;
+    color: white;
+    margin: 0px 61px;
+    padding: 17px 0;
+
+}
+.formdiv .form-group input{
+    border: 1px solid #b59748;
+    position: relative;
+    color: #b59748;
+}
+.formdiv .form-group span{
+    position: absolute;
+    right: 26px;
+    color: #715732;
+    top: 6px;
+}
+.formdiv .form-group p{
+   text-align: right;
+    color: white;
+}
+.formdiv .form-group p a{
+    color: #92c7ff;
+}
+.formdiv .form-group p a:hover{
+    color: #715632;
+}
+.formdiv .checkbox{
+    color: white;
+    margin: 0;
+}
+.formdiv form{
+    width: 100%;
+    float: left;
+    padding: 0 40px;
+}
+.formdiv .signbtn {
+    width: 250px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #515904;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 9px 0px #333;
+    border-radius: 2px;
+    margin: 20px 0;
+}
+.formdiv .signdiv{
+    text-align: center;
+}
+.formdiv .signbtn:hover, .formdiv .signbtn:active, .formdiv .signbtn:focus, .formdiv .signbtn:active:focus{
+    box-shadow: none;
+    transition: 0.5s;
+    outline: none;
+}
+.formdiv .signbtn img{
+    width: 35px;
+}
+.jsttext{
+    text-align: center;
+    width: 100%;
+    color: white;
+    float: left;
+    margin-bottom: 16px;
+}
+.socialbtns{
+    width: 100%;
+    float: left;
+    padding: 0 112px;
+}
+.socialbtns a{
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    padding: 6px;
+    font-size: 17px;
+}
+.socialbtns .fbbtn a{
+    background-color: #3b5999;
+}
+.socialbtns .googlebtn a{
+    background-color: #de4b39;
+}
+.socialbtns .fbbtn a:hover, .socialbtns .fbbtn a:active, .socialbtns .fbbtn a:focus {
+    background-color: #304a82;
+}
+.socialbtns .googlebtn a:hover, .socialbtns .googlebtn a:focus, .socialbtns .googlebtn a:active {
+    background-color: #c53c2b;
+}
+.capimg{
+    width: 100%;
+    float: left;
+    height: 368px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+.s_c{height: auto !important; }
+.c_a{ float:left;width:222px !important;}
+
+.v_b{ float:right; width:222px !important;}
+.capimg img{
+    width: 100%;
+    float: left;
+    overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+.fropicture{
+	position: relative;
+	text-align: center;
+}
+.fropicture .regimg{
+	width: 110px;
+    position: absolute;
+    top: 365px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+	cursor: pointer;
+}
+.nwlbl{
+    color: white; border:none;
+    }
+.loginbtn {
+    padding: 8px;
+    color: #b59848;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 8px 0px #020202;
+    box-shadow: 0px 2px 8px 0px #020202;
+    width: 92px;
+    float: left;
+    text-align: center;
+    margin: 0 10px;
+}
+.loginbtn:hover, .loginbtn:active, .loginbtn:focus, .loginbtn:active:focus{
+	background-color: #715632;
+	transition: .5s;
+	color: white !important;
+}
+.hdrsec{
+	position: relative;
+}
+.drpnw{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 285px;
+}
+
+
+/*footer start*/
+.msgimgdiv {
+    width: 100%;
+    float: left;
+}
+.msgimgdiv img {
+    width: 45px;
+    padding-top: 5px;
+}
+.copyrighttext{
+    text-align: center;
+}
+.copyrighttext p{
+   margin: 0;
+    line-height: 4.3;
+}
+footer {
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    left: 0;
+    padding: 2px 0px 0 0 !important;
+    width: 100%;
+    border-top: 2px solid #b59848;
+    border-bottom: 2px solid #b59848;
+    float: left;
+}
+.social-icondiv{
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+.social-icondiv ul li{
+    display: inline-block;
+    line-height: 4;
+
+}
+.social-icondiv ul{
+    padding: 0;
+    margin: 0;
+}
+
+img.ng-untouched.ng-pristine.ng-valid {
+    width: 100%;
+}
+video {
+    width: 100%;
+}
+/*footer end*/
+
+
+
+
+/*responsive css start*/
+@media only screen and (max-width: 1200px) and (min-width: 320px){
+	.logoimg img{
+		width: 85%;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.logimg{
+		text-align: center;
+		padding: 10px 0;
+	}
+	.loginform-outerdiv {
+    margin: 0 0 40px;
+	}
+	.ezeelogintext p {
+		width: 100%;
+		margin: 0;
+		padding: 8px 0;
+		margin-bottom: 0px;
+		font-size: 18px;
+	}
+	.ezeelogintext img {
+		width: 43px;
+	}
+	.formdiv form {
+		width: 100%;
+		padding: 0;
+	}
+	.formdiv .form-group p {
+		text-align: center;
+		font-size: 13px;
+	}
+	.formdiv .signbtn{
+		width: 100%;
+		margin: 10px 0;
+	}
+	.socialbtns {
+		padding: 0
+	}
+	.formdiv {
+		padding-bottom: 0px;
+	}
+	.msgimgdiv {
+		text-align: center;
+	}
+	.copyrighttext p{
+		line-height: 1.5;
+	}
+	.social-icondiv ul li img {
+		width: 40px;
+	}
+	.social-icondiv {
+		text-align: center;
+	}
+	.drpnw{
+		display: none;
+	}
+	.capimg {
+		height: 180px;
+	}
+	.fropicture .regimg{
+		width: 79px;
+		top: 144px;
+	}
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+	.ezeelogintext p {
+		width: 100%;
+		margin-bottom: 20px;
+		margin: 0;
+	}
+	.socialbtns{
+		padding: 0;
+	}
+	.social-icondiv ul li img {
+		width: 30px;
+	}
+	.formdiv{
+		padding-bottom: 0px;
+	}
+	.drpnw {
+		top: 11px;
+		width: 226px;
+	}
+	.loginbtn{
+		width: 78px;
+		margin: 0 10px;
+	}
+	.capimg {
+		height: 225px;
+	}
+	.fropicture .regimg{
+	width: 100px;
+	top: 220px;
+	}
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 992px){
+	.socialbtns{
+		padding: 0;
+	}
+	.social-icondiv ul li img {
+		width: 30px;
+	}  
+	.capimg {
+		height: 225px;
+	}
+	.fropicture .regimg{
+	width: 100px;
+	top: 222px;
+	}
+}
+/*responsive css end*/
+
+
+.tooltip12 {
+    /*position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;*/
+}
+
+.tooltip12 .tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    /*background-color: black;*/
+    color: #715732;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -86px;
+    top: 56px !important;
+}
+
+.tooltip12:hover .tooltiptext {
+    visibility: visible;
+}
+.error-msg-div {
+    text-align: center;
+    color: #7b0303;
+}
+
+
+.cameradiv {
+    background-color: #848f02;
+    padding: 45px 70px 0;
+    width: 100%;
+    float: left;
+    box-shadow: 0px 0px 23px 0px #0000005e;
+}
+
+.pdfsection {
+    width: 100%;
+    float: left;
+    padding: 50px 0;
+}
+.pdfsection1 {
+    width: 100%;
+    float: left;
+    padding: 0;
+}
+.pd0withposition{
+    padding: 10px 20px;  
+    position: fixed;
+    width: 30%;
+    float: left;
+    top: 0;
+    height: 100%;
+}
+.pmydfdiv {
+    border: 12px solid #848f02;
+    text-align: center;
+}
+.pmydfdiv img {
+    width: 100%;
+}
+.rejectbtn{
+    background-color: #cc3100 !important;
+    /* width: 100% !important; */
+    margin-top: 10px !important;
+}
+.exittbtn{
+    background-color: #B59848 !important;
+    /* width: 100% !important;   */
+    margin-top: 10px !important;
+}
+.appended  .signbutton{
+    padding: 3px 12px !important;
+    box-shadow: -1px 2px 5px 0px #191919 !important;
+    font-size: 12px !important;
+    margin-top: 8px;
+}
+.appended  .signbutton:focus{
+    outline: none;
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    .pd0withposition{
+        padding: 45px 30px 0;   
+        margin-bottom: 20px;
+    }
+    .tooltip12 .tooltiptext {
+        top: -6px !important;
+        font-size: 11px;
+    }
+    .newwithposition{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .pd0withposition{
+        padding: 45px 30px 0;   
+        margin-bottom: 20px;
+    }
+    .tooltip12 .tooltiptext {
+        top: 3px !important;
+        font-size: 14px;    
+    }
+    .newwithposition{
+        padding: 0 !important;  
+    }
+    .newwithposition .fropicture .regimg{
+        width: 50px;
+    }
+    .newwithposition .tooltip12 .tooltiptext{
+        top: 42px !important;
+        font-size: 11px;
+    }
+    .newwithposition .formdiv .signbtn{
+        width: 100%;
+    }
+}
+
+.senddbtn{
+    width: 250px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #515904;
+    border: 1px solid #fff;
+    -webkit-box-shadow: 0px 0px 9px 0px #333;
+    box-shadow: 0px 0px 9px 0px #333;
+    border-radius: 2px;
+    margin: 20px 0;
+}
+.senddbtn:hover{
+    box-shadow: none;
+    transition: .5s;
+}
+
+	
+	
+.signpad {	
+	width: 800px !important;
+	height: auto !important;
+	border: 0px solid #aaa !important;
+    position: fixed;	
+    top: 3%;
+    left:1%;
+	background: #fff;
+	box-shadow: 0px 0px 0px #888888;
+	right: -25%;
+	border-radius:0px;
+	-webkit-border-radius:0px;
+	-moz-border-radius:0px;
+	-o-border-radius:0px;
+	-ms-border-radius:0px;
+}	
+.close-button {	
+	width: 26px;
+	height: 26px;
+	background: #000;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	display: block;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	z-index:99999;
+}	
+#ppup:target {	
+	visibility: visible;
+}	
+.tagline {	
+	padding: 18px 7px;
+	border: 0px solid #4c435e;
+	background: #858f03 !important;
+	color: #fff;
+	font-weight: normal; font-family:"Century Gothic"; text-transform:uppercase !important;
+	font-size: 36px;
+	text-align: center;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+}	
+.ppup_center {	
+	width: 100%;
+	padding: 5px;
+	float: left;
+}	
+.green_tag {	
+	color: #000;
+	padding: 10px 0;
+	display: block;
+	font-weight:bold;
+}	
+strong.green_tag b {	
+	color: #3a76ce !important;
+}	
+div#signvhhhh {	
+	width: 100%;
+	height:96px ;
+}	
+input.signature:focus, input.signature:active {	
+	outline: none;
+	box-shadow: none;
+}	
+.short_sign {	
+width: 100%;	
+float: left;	
+border: none;	
+height: 106px;	
+font-family: 'cursive, sans-serif';	
+font-size: 30px;	
+text-align: center;	
+color: #000000;	
+border-left: 2px solid #4c435e;	
+	
+}	
+	
+.short_sign span {	
+position: absolute;	
+top: 35%;	
+right: 20px;	
+left: 0px;	
+}	
+	
+	
+	
+button.ok_btttn:focus, button.ok_btttn:active, button.ok_btttn:hover {	
+	box-shadow: none;
+	outline: none;
+	border: 1px solid transparent;
+	background-color: #337ab7;
+}	
+	
+button.done_btttn	
+{	
+box-shadow: none !important;	
+	outline: none;
+	border: 0px solid transparent; font-family:"Century Gothic";
+	background: #8ec230!important;
+	border-radius: 0px !important;
+	height:34px !important;
+	letter-spacing:normal !important;
+	padding:6px 12px !important;
+	line-height:normal !important;
+	text-shadow:none !important;
+	
+}	
+button.done_btttn:focus, button.done_btttn:active, button.done_btttn:hover {	
+	box-shadow: none;
+	outline: none;
+	border: 1px solid transparent;
+	background-color: #337ab7;
+	border-radius: 5px;
+}	
+	
+	
+select.selectfont:focus, select.selectfont:active, select.selectfont:hover {	
+	box-shadow: none;
+	outline: none;
+	border: 1px solid transparent;
+	background-color: #337ab7;
+}	
+.agree {	
+	width: 100%;
+	float: left;
+}	
+.agree p {	
+text-align: justify;	
+font-size: 16px !important;	
+color: #000;	
+font-weight: 600;	
+letter-spacing: normal !important;	
+}	
+	
+.signature {	
+	font-family: 'cursive, sans-serif';
+	width:100% !important;
+	font-size:30px !important;
+	color:#000 !important;
+	font-weight:500 !important;
+	border:none;
+	box-shadow:none;
+	line-height:50px !important
+}	
+	
+.bullet_dot {	
+color: #4c435e !important;	
+font-size: 10px;	
+vertical-align: middle;	
+margin: -2px 10px 0 0;	
+}	
+
+.modal-content {
+    background-color: transparent !important
+}
